@@ -1,0 +1,493 @@
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda clean --all
+Will remove 19 (61.6 MB) tarball(s).
+Will remove 1 index cache(s).
+Will remove 42 (117.3 MB) package(s).
+There are no tempfile(s) to remove.
+There are no logfile(s) to remove.
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ python --version
+Command 'python' not found, did you mean:
+  command 'python3' from deb python3
+  command 'python' from deb python-is-python3
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ python3 --version
+Python 3.10.6
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda create -n fermi -c conda-forge -c fermi fermitools
+
+Collecting package metadata (current_repodata.json): done
+Solving environment: failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): done
+Solving environment: - ^Z
+[1]+  Stopped                 ( "$CONDA_EXE" $_CE_M $_CE_CONDA "$@" )
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ source ~/.bashrc
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda install mamba -n base -c conda-forge
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+# All requested packages already installed.
+
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ mamba create -n fermi -c conda-forge -c fermi fermitools
+
+                  __    __    __    __
+                 /  \  /  \  /  \  /  \
+                /    \/    \/    \/    \
+███████████████/  /██/  /██/  /██/  /████████████████████████
+              /  / \   / \   / \   / \  \____
+             /  /   \_/   \_/   \_/   \    o \__,
+            / _/                       \_____/  `
+            |/
+        ███╗   ███╗ █████╗ ███╗   ███╗██████╗  █████╗
+        ████╗ ████║██╔══██╗████╗ ████║██╔══██╗██╔══██╗
+        ██╔████╔██║███████║██╔████╔██║██████╔╝███████║
+        ██║╚██╔╝██║██╔══██║██║╚██╔╝██║██╔══██╗██╔══██║
+        ██║ ╚═╝ ██║██║  ██║██║ ╚═╝ ██║██████╔╝██║  ██║
+        ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═════╝ ╚═╝  ╚═╝
+
+        mamba (1.2.0) supported by @QuantStack
+
+        GitHub:  https://github.com/mamba-org/mamba
+        Twitter: https://twitter.com/QuantStack
+
+█████████████████████████████████████████████████████████████
+
+
+Looking for: ['fermitools']
+
+warning  libmamba Could not parse state fileCould not load cache state: [json.exception.type_error.302] type must be number, but is null
+warning  libmamba Could not parse state fileCould not load cache state: [json.exception.type_error.302] type must be number, but is null
+warning  libmamba Could not parse state fileCould not load cache state: [json.exception.type_error.302] type must be string, but is null
+warning  libmamba Could not parse state fileCould not load cache state: [json.exception.type_error.302] type must be string, but is null
+warning  libmamba Could not parse state fileCould not load cache state: [json.exception.type_error.302] type must be string, but is null
+warning  libmamba Could not parse state fileCould not load cache state: [json.exception.type_error.302] type must be string, but is null
+warning  libmamba Could not parse state fileCould not load cache state: [json.exception.type_error.302] type must be string, but is null
+warning  libmamba Could not parse state fileCould not load cache state: [json.exception.type_error.302] type must be string, but is null
+warning  libmamba Could not parse state fileCould not load cache state: [json.exception.type_error.302] type must be number, but is null
+warning  libmamba Could not parse state fileCould not load cache state: [json.exception.type_error.302] type must be number, but is null
+warning  libmamba Could not parse state fileCould not load cache state: [json.exception.type_error.302] type must be number, but is null
+warning  libmamba Could not parse state fileCould not load cache state: [json.exception.type_error.302] type must be number, but is null
+fermi/noarch                                       858.0 B @   1.7kB/s  0.5s
+fermi/linux-64                                       8.1kB @  15.6kB/s  0.5s
+xspecmodels/linux-64                               558.0 B @   1.0kB/s  0.5s
+pkgs/main/noarch                                   @   1.1MB/s  0.3s
+pkgs/r/linux-64                                      1.4MB @   1.6MB/s  0.4s
+threeml/linux-64                                    10.8kB @  11.4kB/s  0.4s
+pkgs/r/noarch                                      @   1.2MB/s  0.3s
+threeml/noarch                                     130.0 B @  95.0 B/s  0.4s
+xspecmodels/noarch                                 130.0 B @  88.0 B/s  0.6s
+[+] 3.6s
+conda-forge/linux-64 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  10.1MB /  ??.?MB @   4.5MB/s             3.6s
+pkgs/main/linux-64                                   5.7MB @   2.5MB/s  2.7s
+conda-forge/noarch                                  12.2MB @   3.0MB/s  4.4s
+conda-forge/linux-64                                31.4MB @   3.9MB/s 11.1s
+Transaction
+
+  Prefix: /home/ubuntu/anaconda3/envs/fermi
+
+  Updating specs:
+
+   - fermitools
+
+
+  Package                             Version  Build                Channel                    Size
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+  Install:
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  + _libgcc_mutex                         0.1  conda_forge          conda-forge/linux-64        3kB
+  + _openmp_mutex                         4.5  2_gnu                conda-forge/linux-64       24kB
+  + alsa-lib                            1.2.8  h166bdaf_0           conda-forge/linux-64     Cached
+  + astropy                             5.2.2  py39hf0d0a58_0       conda-forge/linux-64     Cached
+  + attr                                2.5.1  h166bdaf_1           conda-forge/linux-64     Cached
+  + brotli                              1.0.9  h166bdaf_8           conda-forge/linux-64     Cached
+  + brotli-bin                          1.0.9  h166bdaf_8           conda-forge/linux-64     Cached
+  + brotlipy                            0.7.0  py39hb9d737c_1005    conda-forge/linux-64     Cached
+  + bzip2                               1.0.8  h7f98852_4           conda-forge/linux-64     Cached
+  + c-ares                             1.19.0  h5eee18b_0           pkgs/main/linux-64       Cached
+  + ca-certificates                  2023.5.7  hbcca054_0           conda-forge/linux-64     Cached
+  + cairo                              1.16.0  h35add3b_1015        conda-forge/linux-64     Cached
+  + certifi                          2023.5.7  pyhd8ed1ab_0         conda-forge/noarch       Cached
+  + cffi                               1.15.1  py39he91dace_3       conda-forge/linux-64     Cached
+  + cfitsio                             4.1.0  hd9d235c_0           conda-forge/linux-64     Cached
+  + charset-normalizer                  3.1.0  pyhd8ed1ab_0         conda-forge/noarch       Cached
+  + clhep                             2.4.5.3  h27087fc_0           conda-forge/linux-64     Cached
+  + contourpy                           1.0.7  py39h4b4f3f3_0       conda-forge/linux-64     Cached
+  + cppunit                            1.15.1  h9c3ff4c_0           conda-forge/linux-64     Cached
+  + cryptography                       40.0.2  py39h079d5ae_0       conda-forge/linux-64     Cached
+  + cycler                             0.11.0  pyhd8ed1ab_0         conda-forge/noarch       Cached
+  + dbus                              1.13.18  hb2f20db_0           pkgs/main/linux-64       Cached
+  + expat                               2.5.0  hcb278e6_1           conda-forge/linux-64     Cached
+  + f2c                        20210323183018  h166bdaf_1010        conda-forge/linux-64     Cached
+  + fermitools                          2.2.0  py39h93a0a19_0       fermi/linux-64             94MB
+  + fermitools-data                      0.18  0                    fermi/noarch              497MB
+  + fftw                               3.3.10  nompi_hc118613_107   conda-forge/linux-64     Cached
+  + font-ttf-dejavu-sans-mono            2.37  hab24e00_0           conda-forge/noarch       Cached
+  + font-ttf-inconsolata                3.000  h77eed37_0           conda-forge/noarch       Cached
+  + font-ttf-source-code-pro            2.038  h77eed37_0           conda-forge/noarch       Cached
+  + font-ttf-ubuntu                      0.83  hab24e00_0           conda-forge/noarch       Cached
+  + fontconfig                         2.14.2  h14ed4e7_0           conda-forge/linux-64     Cached
+  + fonts-conda-ecosystem                   1  0                    conda-forge/noarch          4kB
+  + fonts-conda-forge                       1  0                    conda-forge/noarch          4kB
+  + fonttools                          4.39.4  py39hd1e30aa_0       conda-forge/linux-64     Cached
+  + freetype                           2.12.1  hca18f0e_1           conda-forge/linux-64     Cached
+  + gettext                            0.21.1  h27087fc_0           conda-forge/linux-64     Cached
+  + glib                               2.76.2  hfc55251_0           conda-forge/linux-64     Cached
+  + glib-tools                         2.76.2  hfc55251_0           conda-forge/linux-64     Cached
+  + graphite2                          1.3.14  h295c915_1           pkgs/main/linux-64       Cached
+  + gsl                                 2.7.1  h6e86dc7_1           pkgs/main/linux-64       Cached
+  + gst-plugins-base                   1.22.0  h4243ec0_2           conda-forge/linux-64     Cached
+  + gstreamer                          1.22.0  h25f0c4b_2           conda-forge/linux-64     Cached
+  + harfbuzz                            7.3.0  hdb3a94d_0           conda-forge/linux-64     Cached
+  + healpix_cxx                          3.31  h268b298_1007        conda-forge/linux-64     Cached
+  + icu                                  72.1  hcb278e6_0           conda-forge/linux-64     Cached
+  + idna                                  3.4  pyhd8ed1ab_0         conda-forge/noarch       Cached
+  + importlib-metadata                  6.6.0  pyha770c72_0         conda-forge/noarch       Cached
+  + importlib-resources                5.12.0  pyhd8ed1ab_0         conda-forge/noarch          9kB
+  + importlib_resources                5.12.0  pyhd8ed1ab_0         conda-forge/noarch       Cached
+  + keyutils                            1.6.1  h166bdaf_0           conda-forge/linux-64     Cached
+  + kiwisolver                          1.4.4  py39hf939315_1       conda-forge/linux-64     Cached
+  + krb5                               1.20.1  h81ceb04_0           conda-forge/linux-64     Cached
+  + lame                                3.100  h166bdaf_1003        conda-forge/linux-64     Cached
+  + lcms2                                2.15  haa2dc70_1           conda-forge/linux-64     Cached
+  + ld_impl_linux-64                     2.40  h41732ed_0           conda-forge/linux-64     Cached
+  + lerc                                4.0.0  h27087fc_0           conda-forge/linux-64     Cached
+  + libblas                             3.9.0  16_linux64_openblas  conda-forge/linux-64       13kB
+  + libbrotlicommon                     1.0.9  h166bdaf_8           conda-forge/linux-64     Cached
+  + libbrotlidec                        1.0.9  h166bdaf_8           conda-forge/linux-64     Cached
+  + libbrotlienc                        1.0.9  h166bdaf_8           conda-forge/linux-64     Cached
+  + libcap                               2.67  he9d0100_0           conda-forge/linux-64     Cached
+  + libcblas                            3.9.0  16_linux64_openblas  conda-forge/linux-64       13kB
+  + libclang                           16.0.3  default_h83cc7fd_0   conda-forge/linux-64       21kB
+  + libclang13                         16.0.3  default_hd781213_0   conda-forge/linux-64     Cached
+  + libcups                             2.3.3  h36d4200_3           conda-forge/linux-64     Cached
+  + libcurl                             8.0.1  h588be90_0           conda-forge/linux-64     Cached
+  + libdeflate                           1.18  h0b41bf4_0           conda-forge/linux-64     Cached
+  + libedit                      3.1.20221030  h5eee18b_0           pkgs/main/linux-64       Cached
+  + libev                                4.33  h516909a_1           conda-forge/linux-64     Cached
+  + libevent                           2.1.12  h3358134_0           conda-forge/linux-64     Cached
+  + libexpat                            2.5.0  hcb278e6_1           conda-forge/linux-64     Cached
+  + libffi                              3.4.4  h6a678d5_0           pkgs/main/linux-64       Cached
+  + libflac                             1.4.2  h27087fc_0           conda-forge/linux-64     Cached
+  + libgcc-ng                          12.2.0  h65d4601_19          conda-forge/linux-64     Cached
+  + libgcrypt                          1.10.1  h166bdaf_0           conda-forge/linux-64     Cached
+  + libgfortran-ng                     12.2.0  h69a702a_19          conda-forge/linux-64       23kB
+  + libgfortran5                       12.2.0  h337968e_19          conda-forge/linux-64     Cached
+  + libglib                            2.76.2  hebfc3b9_0           conda-forge/linux-64     Cached
+  + libgomp                            12.2.0  h65d4601_19          conda-forge/linux-64     Cached
+  + libgpg-error                         1.46  h620e276_0           conda-forge/linux-64     Cached
+  + libiconv                             1.17  h166bdaf_0           conda-forge/linux-64     Cached
+  + libjpeg-turbo                     2.1.5.1  h0b41bf4_0           conda-forge/linux-64     Cached
+  + liblapack                           3.9.0  16_linux64_openblas  conda-forge/linux-64       13kB
+  + libllvm16                          16.0.3  hbf9e925_1           conda-forge/linux-64     Cached
+  + libnghttp2                         1.52.0  h61bc06f_0           conda-forge/linux-64     Cached
+  + libnsl                              2.0.0  h7f98852_0           conda-forge/linux-64     Cached
+  + libogg                              1.3.5  h27cfd23_1           pkgs/main/linux-64       Cached
+  + libopenblas                        0.3.21  pthreads_h78a6416_3  conda-forge/linux-64     Cached
+  + libopus                             1.3.1  h7f98852_1           conda-forge/linux-64     Cached
+  + libpng                             1.6.39  h753d276_0           conda-forge/linux-64     Cached
+  + libpq                                15.3  hbcd7760_0           conda-forge/linux-64     Cached
+  + libsndfile                          1.2.0  hb75c966_0           conda-forge/linux-64     Cached
+  + libsqlite                          3.41.2  h2797004_1           conda-forge/linux-64     Cached
+  + libssh2                            1.10.0  hf14f497_3           conda-forge/linux-64     Cached
+  + libstdcxx-ng                       12.2.0  h46fd767_19          conda-forge/linux-64     Cached
+  + libsystemd0                           253  h8c4010b_1           conda-forge/linux-64      381kB
+  + libtiff                             4.5.0  ha587672_6           conda-forge/linux-64     Cached
+  + libuuid                            2.38.1  h0b41bf4_0           conda-forge/linux-64     Cached
+  + libvorbis                           1.3.7  h9c3ff4c_0           conda-forge/linux-64     Cached
+  + libwebp-base                        1.3.0  h0b41bf4_0           conda-forge/linux-64     Cached
+  + libxcb                               1.13  h7f98852_1004        conda-forge/linux-64     Cached
+  + libxkbcommon                        1.5.0  h79f4944_1           conda-forge/linux-64     Cached
+  + libxml2                            2.10.4  hfdac1af_0           conda-forge/linux-64     Cached
+  + libzlib                            1.2.13  h166bdaf_4           conda-forge/linux-64     Cached
+  + lz4-c                               1.9.4  hcb278e6_0           conda-forge/linux-64     Cached
+  + matplotlib                          3.7.1  py39hf3d152e_0       conda-forge/linux-64        8kB
+  + matplotlib-base                     3.7.1  py39he190548_0       conda-forge/linux-64     Cached
+  + mpg123                             1.31.3  hcb278e6_0           conda-forge/linux-64     Cached
+  + munkres                             1.1.4  pyh9f0ad1d_0         conda-forge/noarch       Cached
+  + mysql-common                       8.0.32  hf1915f5_2           conda-forge/linux-64     Cached
+  + mysql-libs                         8.0.32  hca2cd23_2           conda-forge/linux-64        2MB
+  + ncurses                               6.4  h6a678d5_0           pkgs/main/linux-64       Cached
+  + nspr                                 4.35  h27087fc_0           conda-forge/linux-64     Cached
+  + nss                                  3.89  he45b914_0           conda-forge/linux-64     Cached
+  + numpy                              1.24.3  py39h6183b62_0       conda-forge/linux-64     Cached
+  + openjpeg                            2.5.0  hfec8fc6_2           conda-forge/linux-64     Cached
+  + openssl                             3.1.0  hd590300_3           conda-forge/linux-64     Cached
+  + packaging                            23.1  pyhd8ed1ab_0         conda-forge/noarch       Cached
+  + pcre2                               10.40  hc3806b6_0           conda-forge/linux-64     Cached
+  + pgplot                              5.2.2  h68245ad_1008        conda-forge/linux-64     Cached
+  + pillow                              9.5.0  py39h7207d5c_0       conda-forge/linux-64     Cached
+  + pip                                23.1.2  pyhd8ed1ab_0         conda-forge/noarch       Cached
+  + pixman                             0.40.0  h36c2ea0_0           conda-forge/linux-64     Cached
+  + platformdirs                        3.5.1  pyhd8ed1ab_0         conda-forge/noarch       Cached
+  + ply                                  3.11  py_1                 conda-forge/noarch       Cached
+  + pmw                                 2.0.1  py39hf3d152e_1007    conda-forge/linux-64     Cached
+  + pooch                               1.7.0  pyha770c72_3         conda-forge/noarch       Cached
+  + pthread-stubs                         0.4  h36c2ea0_1001        conda-forge/linux-64        6kB
+  + pulseaudio-client                    16.1  h5195f5e_3           conda-forge/linux-64     Cached
+  + pycparser                            2.21  pyhd8ed1ab_0         conda-forge/noarch       Cached
+  + pyerfa                            2.0.0.3  py39h389d5f1_0       conda-forge/linux-64     Cached
+  + pyopenssl                          23.1.1  pyhd8ed1ab_0         conda-forge/noarch       Cached
+  + pyparsing                           3.0.9  pyhd8ed1ab_0         conda-forge/noarch       Cached
+  + pyqt                               5.15.7  py39h5c7b992_3       conda-forge/linux-64     Cached
+  + pyqt5-sip                         12.11.0  py39h227be39_3       conda-forge/linux-64     Cached
+  + pysocks                             1.7.1  py39hf3d152e_5       conda-forge/linux-64       28kB
+  + python                             3.9.16  h2782a2a_0_cpython   conda-forge/linux-64     Cached
+  + python-dateutil                     2.8.2  pyhd8ed1ab_0         conda-forge/noarch       Cached
+  + python_abi                            3.9  3_cp39               conda-forge/linux-64        6kB
+  + pyyaml                                6.0  py39hb9d737c_5       conda-forge/linux-64     Cached
+  + qt-main                            5.15.8  haa3a1c2_11          conda-forge/linux-64     Cached
+  + readline                              8.2  h8228510_1           conda-forge/linux-64     Cached
+  + requests                           2.29.0  pyhd8ed1ab_0         conda-forge/noarch       Cached
+  + scipy                              1.10.1  py39h6183b62_3       conda-forge/linux-64     Cached
+  + setuptools                         67.7.2  pyhd8ed1ab_0         conda-forge/noarch       Cached
+  + sip                                 6.7.9  py39h3d6467e_0       conda-forge/linux-64     Cached
+  + six                                1.16.0  pyh6c4a22f_0         conda-forge/noarch       Cached
+  + tk                                 8.6.12  h27826a3_0           conda-forge/linux-64     Cached
+  + toml                               0.10.2  pyhd8ed1ab_0         conda-forge/noarch       Cached
+  + tomli                               2.0.1  pyhd8ed1ab_0         conda-forge/noarch       Cached
+  + tornado                               6.3  py39h72bdee0_0       conda-forge/linux-64     Cached
+  + typing-extensions                   4.5.0  hd8ed1ab_0           conda-forge/noarch         10kB
+  + typing_extensions                   4.5.0  pyha770c72_0         conda-forge/noarch       Cached
+  + tzdata                              2023c  h71feb2d_0           conda-forge/noarch       Cached
+  + unicodedata2                       15.0.0  py39hb9d737c_0       conda-forge/linux-64     Cached
+  + urllib3                           1.26.15  pyhd8ed1ab_0         conda-forge/noarch       Cached
+  + wcslib                               7.12  h6195f97_0           conda-forge/linux-64     Cached
+  + wheel                              0.40.0  pyhd8ed1ab_0         conda-forge/noarch       Cached
+  + xcb-util                            0.4.0  h516909a_0           conda-forge/linux-64       20kB
+  + xcb-util-image                      0.4.0  h166bdaf_0           conda-forge/linux-64     Cached
+  + xcb-util-keysyms                    0.4.0  h516909a_0           conda-forge/linux-64       12kB
+  + xcb-util-renderutil                 0.3.9  h166bdaf_0           conda-forge/linux-64     Cached
+  + xcb-util-wm                         0.4.1  h516909a_0           conda-forge/linux-64       56kB
+  + xerces-c                            3.2.4  h8d71039_2           conda-forge/linux-64     Cached
+  + xkeyboard-config                     2.38  h0b41bf4_0           conda-forge/linux-64     Cached
+  + xorg-kbproto                        1.0.7  h7f98852_1002        conda-forge/linux-64     Cached
+  + xorg-libice                        1.0.10  h7f98852_0           conda-forge/linux-64     Cached
+  + xorg-libsm                          1.2.3  hd9c2040_1000        conda-forge/linux-64     Cached
+  + xorg-libx11                         1.8.4  h0b41bf4_0           conda-forge/linux-64     Cached
+  + xorg-libxau                         1.0.9  h7f98852_0           conda-forge/linux-64     Cached
+  + xorg-libxdmcp                       1.1.3  h7f98852_0           conda-forge/linux-64     Cached
+  + xorg-libxext                        1.3.4  h0b41bf4_2           conda-forge/linux-64     Cached
+  + xorg-libxrender                    0.9.10  h7f98852_1003        conda-forge/linux-64     Cached
+  + xorg-renderproto                   0.11.1  h7f98852_1002        conda-forge/linux-64     Cached
+  + xorg-xextproto                      7.3.0  h0b41bf4_1003        conda-forge/linux-64     Cached
+  + xorg-xf86vidmodeproto               2.3.1  h7f98852_1002        conda-forge/linux-64     Cached
+  + xorg-xproto                        7.0.31  h7f98852_1007        conda-forge/linux-64     Cached
+  + xz                                  5.4.2  h5eee18b_0           pkgs/main/linux-64       Cached
+  + yaml                                0.2.5  h7f98852_2           conda-forge/linux-64     Cached
+  + zipp                               3.15.0  pyhd8ed1ab_0         conda-forge/noarch       Cached
+  + zlib                               1.2.13  h166bdaf_4           conda-forge/linux-64     Cached
+  + zstd                                1.5.5  hc292b87_0           pkgs/main/linux-64       Cached
+
+  Summary:
+
+  Install: 183 packages
+
+  Total download: 594MB
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+_libgcc_mutex                                        2.6kB @  12.1kB/s  0.2s
+python_abi                                           5.7kB @  25.0kB/s  0.2s
+libgfortran-ng                                      22.9kB @ 100.7kB/s  0.2s
+liblapack                                           12.8kB @  50.2kB/s  0.0s
+fonts-conda-ecosystem                                3.7kB @  13.1kB/s  0.1s
+_openmp_mutex                                       23.6kB @  79.5kB/s  0.3s
+libblas                                             12.9kB @  38.5kB/s  0.1s
+fonts-conda-forge                                    4.1kB @  10.9kB/s  0.0s
+typing-extensions                                    9.7kB @  22.7kB/s  0.1s
+pthread-stubs                                        5.6kB @  10.3kB/s  0.5s
+libcblas                                            12.8kB @  21.0kB/s  0.1s
+pysocks                                             28.5kB @  43.6kB/s  0.4s
+libclang                                            21.0kB @  31.6kB/s  0.1s
+xcb-util                                            20.1kB @  29.7kB/s  0.4s
+xcb-util-wm                                         56.0kB @  78.7kB/s  0.1s
+xcb-util-keysyms                                    11.8kB @  16.3kB/s  0.0s
+libsystemd0                                        380.6kB @ 526.3kB/s  0.5s
+matplotlib                                           8.3kB @  11.0kB/s  0.0s
+importlib-resources                                  9.3kB @  12.0kB/s  0.1s
+mysql-libs                                           1.5MB @   1.7MB/s  0.2s
+fermitools                                          94.4MB @   7.6MB/s 11.9s
+[+] 34.2s
+Downloading  (1) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 450.6MB / 593.9MB @  16.0MB/s fermitools-data           34.2s
+[+] 34.3s
+Downloading  (1) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 450.6MB / 593.9MB @  16.0MB/s fermitools-data           34.3s
+fermitools-data                                    497.4MB @  10.7MB/s 45.6s
+
+Downloading and Extracting Packages
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+
+To activate this environment, use
+
+     $ mamba activate fermi
+
+To deactivate an active environment, use
+
+     $ mamba deactivate
+
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda activate fermi
+(fermi) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ find /dsm/manip/glast/anaconda3/envs/fermi-2.2.0-mamba/lib -name "libgsl*"
+find: ‘/dsm/manip/glast/anaconda3/envs/fermi-2.2.0-mamba/lib’: No such file or directory
+(fermi) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda config --set channel_priority false --override-channels
+usage: conda [-h] [-V] command ...
+conda: error: unrecognized arguments: --override-channels
+(fermi) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda config --set channel_priority false
+(fermi) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda config --override-channels
+usage: conda [-h] [-V] command ...
+conda: error: unrecognized arguments: --override-channels
+(fermi) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda [-h] [-V]
+usage: conda [-h] [-V] command ...
+conda: error: argument command: invalid choice: '[-h]' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'notices')
+(fermi) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ find $CONDA_PREFIX -name "libgsl*" 
+/home/ubuntu/anaconda3/envs/fermi/lib/libgsl.so
+/home/ubuntu/anaconda3/envs/fermi/lib/libgsl.so.27.0.0
+/home/ubuntu/anaconda3/envs/fermi/lib/libgsl.so.27
+/home/ubuntu/anaconda3/envs/fermi/lib/libgsl.a
+/home/ubuntu/anaconda3/envs/fermi/lib/libgslcblas.so
+/home/ubuntu/anaconda3/envs/fermi/lib/libgslcblas.a
+/home/ubuntu/anaconda3/envs/fermi/lib/libgslcblas.so.0.0.0
+/home/ubuntu/anaconda3/envs/fermi/lib/libgslcblas.so.0
+(fermi) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ source ~/.bashrc
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$  argument command: invalid choice: '[-h]' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'notices')
+(fermi) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ find $CONDA_PREFIX -name "libgsl*" 
+/home/ubuntu/anaconda3/envs/fermi/lib/libgsl.so
+/home/ubuntu/anaconda3/envs/fermi/lib/libgsl.so.27.0.0
+/home/ubuntu/anaconda3/envs/fermi/lib/libgsl.so.27
+/home/ubuntu/anaconda3/envs/fermi/lib/libgsl.a
+/home/ubuntu/anaconda3/envs/fermi/ argument command: invalid choice: '[-h]' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'notices')
+(fermi) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ find $CONDA_PREFIX -name "libgsl*" 
+/home/ubuntu/anaconda3/envs/fermi/lib/libgsl.so
+/home/ubuntu/anaconda3/envs/fermi/lib/libgsl.so.27.0.0
+/home/ubuntu/anaconda3/envs/fermi/lib/libgsl.so.27
+/home/ubuntu/anaconda3/envs/fermi/lib/libgsl.a
+/home/ubuntu/anaconda3/envs/fermi/
+
+------------------------------------------------------------
+
+After that I tried this codes in different terminal and everytime I get the same error.
+
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/ayush_backup/Likelihood_Analysis/GBM_Analysis/Mini Project - Power Spectrum/Results$ mamba activate fermi
+Run 'mamba init' to be able to run mamba activate/deactivate
+and start a new shell session. Or use conda to activate/deactivate.
+
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/ayush_backup/Likelihood_Analysis/GBM_Analysis/Mini Project - Power Spectrum/Results$ mamba init
+
+                  __    __    __    __
+                 /  \  /  \  /  \  /  \
+                /    \/    \/    \/    \
+███████████████/  /██/  /██/  /██/  /████████████████████████
+              /  / \   / \   / \   / \  \____
+             /  /   \_/   \_/   \_/   \    o \__,
+            / _/                       \_____/  `
+            |/
+        ███╗   ███╗ █████╗ ███╗   ███╗██████╗  █████╗
+        ████╗ ████║██╔══██╗████╗ ████║██╔══██╗██╔══██╗
+        ██╔████╔██║███████║██╔████╔██║██████╔╝███████║
+        ██║╚██╔╝██║██╔══██║██║╚██╔╝██║██╔══██╗██╔══██║
+        ██║ ╚═╝ ██║██║  ██║██║ ╚═╝ ██║██████╔╝██║  ██║
+        ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═════╝ ╚═╝  ╚═╝
+
+        mamba (1.2.0) supported by @QuantStack
+
+        GitHub:  https://github.com/mamba-org/mamba
+        Twitter: https://twitter.com/QuantStack
+
+█████████████████████████████████████████████████████████████
+
+'Namespace' object has no attribute 'no_user'
+
+# >>>>>>>>>>>>>>>>>>>>>> ERROR REPORT <<<<<<<<<<<<<<<<<<<<<<
+
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/lib/python3.10/site-packages/conda/exceptions.py", line 1132, in __call__
+        return func(*args, **kwargs)
+      File "/home/ubuntu/anaconda3/lib/python3.10/site-packages/mamba/mamba.py", line 936, in exception_converter
+        raise e
+      File "/home/ubuntu/anaconda3/lib/python3.10/site-packages/mamba/mamba.py", line 929, in exception_converter
+        exit_code = _wrapped_main(*args, **kwargs)
+      File "/home/ubuntu/anaconda3/lib/python3.10/site-packages/mamba/mamba.py", line 887, in _wrapped_main
+        result = do_call(parsed_args, p)
+      File "/home/ubuntu/anaconda3/lib/python3.10/site-packages/mamba/mamba.py", line 758, in do_call
+        exit_code = shell_init(args)
+      File "/home/ubuntu/anaconda3/lib/python3.10/site-packages/mamba/mamba_shell_init.py", line 87, in shell_init
+        if args.no_user:
+    AttributeError: 'Namespace' object has no attribute 'no_user'
+
+`$ /home/ubuntu/anaconda3/condabin/mamba init`
+
+  environment variables:
+                 CIO_TEST=<not set>
+                CONDA_EXE=/home/ubuntu/anaconda3/bin/conda
+         CONDA_PYTHON_EXE=/home/ubuntu/anaconda3/bin/python
+               CONDA_ROOT=/home/ubuntu/anaconda3
+              CONDA_SHLVL=0
+           CURL_CA_BUNDLE=<not set>
+               LD_PRELOAD=<not set>
+                     PATH=/home/ubuntu/anaconda3/condabin:/home/ubuntu/Healpix_3.82/bin:/home/ub
+                          untu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbi
+                          n:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+       REQUESTS_CA_BUNDLE=<not set>
+            SSL_CERT_FILE=<not set>
+
+     active environment : None
+            shell level : 0
+       user config file : /home/ubuntu/.condarc
+ populated config files : /home/ubuntu/.condarc
+          conda version : 23.3.1
+    conda-build version : 3.24.0
+         python version : 3.10.9.final.0
+       virtual packages : __archspec=1=x86_64
+                          __glibc=2.35=0
+                          __linux=5.19.0=0
+                          __unix=0=0
+       base environment : /home/ubuntu/anaconda3  (writable)
+      conda av data dir : /home/ubuntu/anaconda3/etc/conda
+  conda av metadata url : None
+           channel URLs : https://conda.anaconda.org/xspecmodels/linux-64
+                          https://conda.anaconda.org/xspecmodels/noarch
+                          https://conda.anaconda.org/threeml/linux-64
+                          https://conda.anaconda.org/threeml/noarch
+                          https://conda.anaconda.org/conda-forge/linux-64
+                          https://conda.anaconda.org/conda-forge/noarch
+                          https://repo.anaconda.com/pkgs/main/linux-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/linux-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+          package cache : /home/ubuntu/anaconda3/pkgs
+                          /home/ubuntu/.conda/pkgs
+       envs directories : /home/ubuntu/anaconda3/envs
+                          /home/ubuntu/.conda/envs
+               platform : linux-64
+             user-agent : conda/23.3.1 requests/2.30.0 CPython/3.10.9 Linux/5.19.0-41-generic ubuntu/22.04.2 glibc/2.35
+                UID:GID : 1000:1000
+             netrc file : None
+           offline mode : False
+
+
+An unexpected error has occurred. Conda has prepared the above report.
+
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/ayush_backup/Likelihood_Analysis/GBM_Analysis/Mini Project - Power Spectrum/Results$ mamba activate fermi
+Run 'mamba init' to be able to run mamba activate/deactivate
+and start a new shell session. Or use conda to activate/deactivate.
+
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/ayush_backup/Likelihood_Analysis/GBM_Analysis/Mini Project - Power Spectrum/Results$ conda activate fermi
+(fermi) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/ayush_backup/Likelihood_Analysis/GBM_Analysis/Mini Project - Power Spectrum/Results$ gtburst
+
+Loading pyBurstAnalysisGUI v. 03-00-00p5 .....Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/fermi/bin/gtburst", line 7, in <module>
+    from fermitools.gtburst import main
+  File "/home/ubuntu/anaconda3/envs/fermi/lib/python3.9/site-packages/fermitools/gtburst.py", line 73, in <module>
+    from GtBurst import dataHandling
+  File "/home/ubuntu/anaconda3/envs/fermi/lib/python3.9/site-packages/fermitools/GtBurst/dataHandling.py", line 16, in <module>
+    import BinnedAnalysis
+  File "/home/ubuntu/anaconda3/envs/fermi/lib/python3.9/site-packages/fermitools/BinnedAnalysis.py", line 13, in <module>
+    import pyLikelihood as pyLike
+  File "/home/ubuntu/anaconda3/envs/fermi/lib/python3.9/site-packages/fermitools/pyLikelihood.py", line 15, in <module>
+    import _pyLikelihood
+  ImportError: libgsl.so.25: cannot open shared object file: No such file or directory
+(fermi) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/ayush_backup/Likelihood_Analysis/GBM_Analysis/Mini Project - Power Spectrum/Results$ 
+
+
+
+
+

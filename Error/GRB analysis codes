@@ -1,0 +1,99 @@
+(base) doc_ayush@astro-A320M-S2H:~/GRB Analysis/Likelihood Analysis/gtburst/180720B$ conda activate fermi-2.2.0
+(fermi-2.2.0) doc_ayush@astro-A320M-S2H:~/GRB Analysis/Likelihood Analysis/gtburst/180720B$ gtselect evclass=128
+Input FT1 file[grb_events.fits] grb_events.fits
+Output FT1 file[GRB180720B_map_events.fits] GRB180720B_map_events.fits
+RA for new search center (degrees) (0:360) [0.52913] 0.52913
+Dec for new search center (degrees) (-90:90) [-2.91883] -2.91883
+radius of new search region (degrees) (0:180) [15] 
+start time (MET in s) (0:) [553789304] 
+end time (MET in s) (0:) [553799304] 553789904
+lower energy limit (MeV) (0:) [100] 
+upper energy limit (MeV) (0:) [300000] 
+maximum zenith angle value (degrees) (0:180) [180] 
+Done.
+(fermi-2.2.0) doc_ayush@astro-A320M-S2H:~/GRB Analysis/Likelihood Analysis/gtburst/180720B$ gtselect evclass=128
+Input FT1 file[grb_events.fits] 
+Output FT1 file[GRB180720B_map_events.fits] GRB180720B_lc_events.fits
+RA for new search center (degrees) (0:360) [0.52913] 
+Dec for new search center (degrees) (-90:90) [-2.91883] 
+radius of new search region (degrees) (0:180) [15] 10
+start time (MET in s) (0:) [553789304] 
+end time (MET in s) (0:) [553789904] 553799304
+lower energy limit (MeV) (0:) [100] 
+upper energy limit (MeV) (0:) [300000] 
+maximum zenith angle value (degrees) (0:180) [180] 
+Done.
+(fermi-2.2.0) doc_ayush@astro-A320M-S2H:~/GRB Analysis/Likelihood Analysis/gtburst/180720B$ gtbin
+This is gtbin version HEAD
+Type of output file (CCUBE|CMAP|LC|PHA1|PHA2|HEALPIX) [PHA2] CMAP
+Event data file name[] GRB180720B_map_events.fits
+Output file name[] GRB180720B_counts_map.fits
+Spacecraft data file name[NONE] 
+Size of the X axis in pixels[] 50
+Size of the Y axis in pixels[] 50
+Image scale (in degrees/pixel)[] 0.5
+Coordinate system (CEL - celestial, GAL -galactic) (CEL|GAL) [CEL] 
+First coordinate of image center in degrees (RA or galactic l)[] 0.52913
+Second coordinate of image center in degrees (DEC or galactic b)[] -2.91883
+Rotation angle of image axis, in degrees[0.] 
+Projection method e.g. AIT|ARC|CAR|GLS|MER|NCP|SIN|STG|TAN:[AIT] 
+gtbin: WARNING: No spacecraft file: EXPOSURE keyword will be set equal to ontime.
+(fermi-2.2.0) doc_ayush@astro-A320M-S2H:~/GRB Analysis/Likelihood Analysis/gtburst/180720B$ gtbin
+This is gtbin version HEAD
+Type of output file (CCUBE|CMAP|LC|PHA1|PHA2|HEALPIX) [CMAP] LC
+Event data file name[GRB180720B_map_events.fits] GRB180720B_lc_events.fits
+Output file name[GRB180720B_counts_map.fits] GRB180720B_light_curve.fits
+Spacecraft data file name[NONE] 
+Algorithm for defining time bins (FILE|LIN|SNR) [LIN] 
+Start value for first time bin in MET[0] 553789304
+Stop value for last time bin in MET[0] 553799304
+Width of linearly uniform time bins in seconds[0] 10
+gtbin: WARNING: No spacecraft file: EXPOSURE keyword will be set equal to ontime.
+(fermi-2.2.0) doc_ayush@astro-A320M-S2H:~/GRB Analysis/Likelihood Analysis/gtburst/180720B$ fv &
+[1] 7365
+(fermi-2.2.0) doc_ayush@astro-A320M-S2H:~/GRB Analysis/Likelihood Analysis/gtburst/180720B$ ds9 &
+[2] 7445
+(fermi-2.2.0) doc_ayush@astro-A320M-S2H:~/GRB Analysis/Likelihood Analysis/gtburst/180720B$ fv &
+[3] 7494
+(fermi-2.2.0) doc_ayush@astro-A320M-S2H:~/GRB Analysis/Likelihood Analysis/gtburst/180720B$ fv &
+[4] 7898
+(fermi-2.2.0) doc_ayush@astro-A320M-S2H:~/GRB Analysis/Likelihood Analysis/gtburst/180720B$ fv &
+[5] 7919
+(fermi-2.2.0) doc_ayush@astro-A320M-S2H:~/GRB Analysis/Likelihood Analysis/gtburst/180720B$ fv &
+[6] 7942
+(fermi-2.2.0) doc_ayush@astro-A320M-S2H:~/GRB Analysis/Likelihood Analysis/gtburst/180720B$ fv &
+[7] 8025
+(fermi-2.2.0) doc_ayush@astro-A320M-S2H:~/GRB Analysis/Likelihood Analysis/gtburst/180720B$ gtselect evclass=16
+Input FT1 file[grb_events.fits] filtered_zmax100.fits
+Output FT1 file[GRB180720B_lc_events.fits] localize_zmax100.fits
+RA for new search center (degrees) (0:360) [0.52913] 
+Dec for new search center (degrees) (-90:90) [-2.91883] 
+radius of new search region (degrees) (0:180) [10] 
+start time (MET in s) (0:) [553789304] 
+end time (MET in s) (0:) [553799304] 553789604
+lower energy limit (MeV) (0:) [100] 
+upper energy limit (MeV) (0:) [300000] 
+maximum zenith angle value (degrees) (0:180) [180] 
+Caught N3tip12TipExceptionE at the top level: Could not open FITS extension "filtered_zmax100.fits[EVENTS]" (CFITSIO ERROR 301: illegal HDU number)
+(fermi-2.2.0) doc_ayush@astro-A320M-S2H:~/GRB Analysis/Likelihood Analysis/gtburst/180720B$ gtselect evclass=16
+Input FT1 file[filtered_zmax100.fits] 
+Output FT1 file[localize_zmax100.fits] 
+RA for new search center (degrees) (0:360) [0.52913] 
+Dec for new search center (degrees) (-90:90) [-2.91883] 
+radius of new search region (degrees) (0:180) [10] 15
+start time (MET in s) (0:) [553789304] 
+end time (MET in s) (0:) [553789604] 
+lower energy limit (MeV) (0:) [100] 
+upper energy limit (MeV) (0:) [300000] 
+maximum zenith angle value (degrees) (0:180) [180] 100
+(fermi-2.2.0) doc_ayush@astro-A320M-S2H:~/GRB Analysis/Likelihood Analysis/gtburst/180720B$ 0.fits[EVENTS]" (CFITSIO ERROR 301: illegal HDU number)
+(fermi-2.2.0) doc_ayush@astro-A320M-S2H:~/GRB Analysis/Likelihood Analysis/gtburst/180720B$ gtfindsrc
+Event file[] localize_zmax100.fits
+Spacecraft file[] grb_spacecraft.fits
+Output file for trial points[] GRB180720B_gtfindsrc.txt
+Response functions to use[CALDB] P8R3_TRANSIENT020_V3
+Livetime cube file[none] 
+Unbinned exposure map[none] 
+Source model file[none] 
+(fermi-2.2.0) doc_ayush@astro-A320M-S2H:~/GRB Analysis/Likelihood Analysis/gtburst/180720B$ 
+

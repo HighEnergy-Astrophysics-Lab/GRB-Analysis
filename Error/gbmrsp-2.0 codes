@@ -1,0 +1,213 @@
+(fermi) doc_ayush@astro-A320M-S2H:~$ cd gbmrsp-2.0
+(fermi) doc_ayush@astro-A320M-S2H:~/gbmrsp-2.0$ cd build
+(fermi) doc_ayush@astro-A320M-S2H:~/gbmrsp-2.0/build$ cmake ../src
+CMake Error at /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:136 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/doc_ayush/gbmrsp-2.0/build/CMakeFiles/3.10.2/CompilerIdFortran/CMakeFortranCompilerId.F
+Call Stack (most recent call first):
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:147 (CMAKE_DETERMINE_COMPILER_ID_WRITE)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:31 (CMAKE_DETERMINE_COMPILER_ID_BUILD)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineFortranCompiler.cmake:179 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:136 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/doc_ayush/gbmrsp-2.0/build/CMakeFiles/3.10.2/CompilerIdFortran/CMakeFortranCompilerId.F
+Call Stack (most recent call first):
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:147 (CMAKE_DETERMINE_COMPILER_ID_WRITE)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:31 (CMAKE_DETERMINE_COMPILER_ID_BUILD)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineFortranCompiler.cmake:179 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:136 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/doc_ayush/gbmrsp-2.0/build/CMakeFiles/3.10.2/CompilerIdFortran/CMakeFortranCompilerId.F
+Call Stack (most recent call first):
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:147 (CMAKE_DETERMINE_COMPILER_ID_WRITE)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:31 (CMAKE_DETERMINE_COMPILER_ID_BUILD)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineFortranCompiler.cmake:179 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:136 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/doc_ayush/gbmrsp-2.0/build/CMakeFiles/3.10.2/CompilerIdFortran/CMakeFortranCompilerId.F
+Call Stack (most recent call first):
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:147 (CMAKE_DETERMINE_COMPILER_ID_WRITE)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:31 (CMAKE_DETERMINE_COMPILER_ID_BUILD)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineFortranCompiler.cmake:179 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:136 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/doc_ayush/gbmrsp-2.0/build/CMakeFiles/3.10.2/CompilerIdFortran/CMakeFortranCompilerId.F
+Call Stack (most recent call first):
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:147 (CMAKE_DETERMINE_COMPILER_ID_WRITE)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:31 (CMAKE_DETERMINE_COMPILER_ID_BUILD)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineFortranCompiler.cmake:179 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:136 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/doc_ayush/gbmrsp-2.0/build/CMakeFiles/3.10.2/CompilerIdFortran/CMakeFortranCompilerId.F
+Call Stack (most recent call first):
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:147 (CMAKE_DETERMINE_COMPILER_ID_WRITE)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:31 (CMAKE_DETERMINE_COMPILER_ID_BUILD)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineFortranCompiler.cmake:179 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:136 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/doc_ayush/gbmrsp-2.0/build/CMakeFiles/3.10.2/CompilerIdFortran/CMakeFortranCompilerId.F
+Call Stack (most recent call first):
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:147 (CMAKE_DETERMINE_COMPILER_ID_WRITE)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:31 (CMAKE_DETERMINE_COMPILER_ID_BUILD)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineFortranCompiler.cmake:179 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:136 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/doc_ayush/gbmrsp-2.0/build/CMakeFiles/3.10.2/CompilerIdFortran/CMakeFortranCompilerId.F
+Call Stack (most recent call first):
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:147 (CMAKE_DETERMINE_COMPILER_ID_WRITE)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:31 (CMAKE_DETERMINE_COMPILER_ID_BUILD)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineFortranCompiler.cmake:179 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+-- The Fortran compiler identification is unknown
+CMake Error at CMakeLists.txt:2 (project):
+  The CMAKE_Fortran_COMPILER:
+
+    /opt/local/bin/gfortran
+
+  is not a full path to an existing compiler tool.
+
+  Tell CMake where to find the compiler by setting either the environment
+  variable "FC" or the CMake cache entry CMAKE_Fortran_COMPILER to the full
+  path to the compiler, or to the compiler name if it is in the PATH.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/doc_ayush/gbmrsp-2.0/build/CMakeFiles/CMakeOutput.log".
+See also "/home/doc_ayush/gbmrsp-2.0/build/CMakeFiles/CMakeError.log".
+(fermi) doc_ayush@astro-A320M-S2H:~/gbmrsp-2.0/build$ cmake -DCMAKE_INSTALL_PREFIX=/home/doc_ayush/gbmrsp-2.0 ../src
+CMake Error at /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:136 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/doc_ayush/gbmrsp-2.0/build/CMakeFiles/3.10.2/CompilerIdFortran/CMakeFortranCompilerId.F
+Call Stack (most recent call first):
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:147 (CMAKE_DETERMINE_COMPILER_ID_WRITE)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:31 (CMAKE_DETERMINE_COMPILER_ID_BUILD)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineFortranCompiler.cmake:179 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:136 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/doc_ayush/gbmrsp-2.0/build/CMakeFiles/3.10.2/CompilerIdFortran/CMakeFortranCompilerId.F
+Call Stack (most recent call first):
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:147 (CMAKE_DETERMINE_COMPILER_ID_WRITE)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:31 (CMAKE_DETERMINE_COMPILER_ID_BUILD)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineFortranCompiler.cmake:179 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:136 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/doc_ayush/gbmrsp-2.0/build/CMakeFiles/3.10.2/CompilerIdFortran/CMakeFortranCompilerId.F
+Call Stack (most recent call first):
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:147 (CMAKE_DETERMINE_COMPILER_ID_WRITE)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:31 (CMAKE_DETERMINE_COMPILER_ID_BUILD)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineFortranCompiler.cmake:179 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:136 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/doc_ayush/gbmrsp-2.0/build/CMakeFiles/3.10.2/CompilerIdFortran/CMakeFortranCompilerId.F
+Call Stack (most recent call first):
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:147 (CMAKE_DETERMINE_COMPILER_ID_WRITE)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:31 (CMAKE_DETERMINE_COMPILER_ID_BUILD)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineFortranCompiler.cmake:179 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:136 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/doc_ayush/gbmrsp-2.0/build/CMakeFiles/3.10.2/CompilerIdFortran/CMakeFortranCompilerId.F
+Call Stack (most recent call first):
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:147 (CMAKE_DETERMINE_COMPILER_ID_WRITE)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:31 (CMAKE_DETERMINE_COMPILER_ID_BUILD)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineFortranCompiler.cmake:179 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:136 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/doc_ayush/gbmrsp-2.0/build/CMakeFiles/3.10.2/CompilerIdFortran/CMakeFortranCompilerId.F
+Call Stack (most recent call first):
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:147 (CMAKE_DETERMINE_COMPILER_ID_WRITE)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:31 (CMAKE_DETERMINE_COMPILER_ID_BUILD)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineFortranCompiler.cmake:179 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:136 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/doc_ayush/gbmrsp-2.0/build/CMakeFiles/3.10.2/CompilerIdFortran/CMakeFortranCompilerId.F
+Call Stack (most recent call first):
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:147 (CMAKE_DETERMINE_COMPILER_ID_WRITE)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:31 (CMAKE_DETERMINE_COMPILER_ID_BUILD)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineFortranCompiler.cmake:179 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:136 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/doc_ayush/gbmrsp-2.0/build/CMakeFiles/3.10.2/CompilerIdFortran/CMakeFortranCompilerId.F
+Call Stack (most recent call first):
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:147 (CMAKE_DETERMINE_COMPILER_ID_WRITE)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineCompilerId.cmake:31 (CMAKE_DETERMINE_COMPILER_ID_BUILD)
+  /usr/share/cmake-3.10/Modules/CMakeDetermineFortranCompiler.cmake:179 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+-- The Fortran compiler identification is unknown
+CMake Error at CMakeLists.txt:2 (project):
+  The CMAKE_Fortran_COMPILER:
+
+    /opt/local/bin/gfortran
+
+  is not a full path to an existing compiler tool.
+
+  Tell CMake where to find the compiler by setting either the environment
+  variable "FC" or the CMake cache entry CMAKE_Fortran_COMPILER to the full
+  path to the compiler, or to the compiler name if it is in the PATH.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/doc_ayush/gbmrsp-2.0/build/CMakeFiles/CMakeOutput.log".
+See also "/home/doc_ayush/gbmrsp-2.0/build/CMakeFiles/CMakeError.log".
+

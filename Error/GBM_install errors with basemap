@@ -1,0 +1,1134 @@
+doc_ayush@astro-A320M-S2H:~$ python3 -m venv gbm
+doc_ayush@astro-A320M-S2H:~$ source gbm/bin/activate
+(gbm) doc_ayush@astro-A320M-S2H:~$ export GEOS_DIR~/.geos_dir
+bash: export: `GEOS_DIR~/.geos_dir': not a valid identifier
+(gbm) doc_ayush@astro-A320M-S2H:~$ export GEOS_DIR=~/.geos_dir
+(gbm) doc_ayush@astro-A320M-S2H:~$ python3 -m pip install basemap
+Requirement already satisfied: basemap in ./gbm/lib/python3.9/site-packages (1.3.4)
+Requirement already satisfied: numpy<1.24,>=1.22 in ./gbm/lib/python3.9/site-packages (from basemap) (1.23.1)
+Requirement already satisfied: matplotlib<3.6,>=1.5 in ./gbm/lib/python3.9/site-packages (from basemap) (3.2.1)
+Requirement already satisfied: pyproj<3.4.0,>=1.9.3 in ./gbm/lib/python3.9/site-packages (from basemap) (3.3.1)
+Requirement already satisfied: basemap-data<1.4,>=1.3.2 in ./gbm/lib/python3.9/site-packages (from basemap) (1.3.2)
+Requirement already satisfied: pyshp<2.4,>=1.2 in ./gbm/lib/python3.9/site-packages (from basemap) (2.3.0)
+Requirement already satisfied: cycler>=0.10 in ./gbm/lib/python3.9/site-packages (from matplotlib<3.6,>=1.5->basemap) (0.11.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in ./gbm/lib/python3.9/site-packages (from matplotlib<3.6,>=1.5->basemap) (1.4.3)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in ./gbm/lib/python3.9/site-packages (from matplotlib<3.6,>=1.5->basemap) (3.0.9)
+Requirement already satisfied: python-dateutil>=2.1 in ./gbm/lib/python3.9/site-packages (from matplotlib<3.6,>=1.5->basemap) (2.8.2)
+Requirement already satisfied: certifi in ./gbm/lib/python3.9/site-packages (from pyproj<3.4.0,>=1.9.3->basemap) (2022.6.15)
+Requirement already satisfied: six>=1.5 in ./gbm/lib/python3.9/site-packages (from python-dateutil>=2.1->matplotlib<3.6,>=1.5->basemap) (1.16.0)
+(gbm) doc_ayush@astro-A320M-S2H:~$ pip3 install /home/doc_ayush/gbm_data_tools-1.1.1.tar
+Processing ./gbm_data_tools-1.1.1.tar
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: pyproj>=1.9.6 in ./gbm/lib/python3.9/site-packages (from gbm-data-tools==1.1.1) (3.3.1)
+Requirement already satisfied: numpy>=1.17.3 in ./gbm/lib/python3.9/site-packages (from gbm-data-tools==1.1.1) (1.23.1)
+Requirement already satisfied: scipy>=1.1.0 in ./gbm/lib/python3.9/site-packages (from gbm-data-tools==1.1.1) (1.8.1)
+Requirement already satisfied: matplotlib<=3.2.1,>=2.2.3 in ./gbm/lib/python3.9/site-packages (from gbm-data-tools==1.1.1) (3.2.1)
+Requirement already satisfied: astropy>=3.1 in ./gbm/lib/python3.9/site-packages (from gbm-data-tools==1.1.1) (5.1)
+Requirement already satisfied: healpy>=1.12.4 in ./gbm/lib/python3.9/site-packages (from gbm-data-tools==1.1.1) (1.15.2)
+Requirement already satisfied: packaging>=19.0 in ./gbm/lib/python3.9/site-packages (from astropy>=3.1->gbm-data-tools==1.1.1) (21.3)
+Requirement already satisfied: PyYAML>=3.13 in ./gbm/lib/python3.9/site-packages (from astropy>=3.1->gbm-data-tools==1.1.1) (6.0)
+Requirement already satisfied: pyerfa>=2.0 in ./gbm/lib/python3.9/site-packages (from astropy>=3.1->gbm-data-tools==1.1.1) (2.0.0.1)
+Requirement already satisfied: cycler>=0.10 in ./gbm/lib/python3.9/site-packages (from matplotlib<=3.2.1,>=2.2.3->gbm-data-tools==1.1.1) (0.11.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in ./gbm/lib/python3.9/site-packages (from matplotlib<=3.2.1,>=2.2.3->gbm-data-tools==1.1.1) (1.4.3)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in ./gbm/lib/python3.9/site-packages (from matplotlib<=3.2.1,>=2.2.3->gbm-data-tools==1.1.1) (3.0.9)
+Requirement already satisfied: python-dateutil>=2.1 in ./gbm/lib/python3.9/site-packages (from matplotlib<=3.2.1,>=2.2.3->gbm-data-tools==1.1.1) (2.8.2)
+Requirement already satisfied: certifi in ./gbm/lib/python3.9/site-packages (from pyproj>=1.9.6->gbm-data-tools==1.1.1) (2022.6.15)
+Requirement already satisfied: six>=1.5 in ./gbm/lib/python3.9/site-packages (from python-dateutil>=2.1->matplotlib<=3.2.1,>=2.2.3->gbm-data-tools==1.1.1) (1.16.0)
+Using legacy 'setup.py install' for gbm-data-tools, since package 'wheel' is not installed.
+Installing collected packages: gbm-data-tools
+  Attempting uninstall: gbm-data-tools
+    Found existing installation: gbm-data-tools 1.1.1
+    Uninstalling gbm-data-tools-1.1.1:
+      Successfully uninstalled gbm-data-tools-1.1.1
+  Running setup.py install for gbm-data-tools ... done
+Successfully installed gbm-data-tools-1.1.1
+(gbm) doc_ayush@astro-A320M-S2H:~$ pip3 install /home/doc_ayush/gbm_data_tools-1.1.1.tar[basemap]
+Processing ./gbm_data_tools-1.1.1.tar
+  Preparing metadata (setup.py) ... done
+Collecting basemap@ git+https://github.com/matplotlib/basemap@v1.2.1rel
+  Cloning https://github.com/matplotlib/basemap (to revision v1.2.1rel) to /tmp/pip-install-11sg8ro2/basemap_054e458c231945ff9c08f8e039fb97f6
+  Running command git clone --filter=blob:none --quiet https://github.com/matplotlib/basemap /tmp/pip-install-11sg8ro2/basemap_054e458c231945ff9c08f8e039fb97f6
+  Running command git checkout -q 5f6a39f46464794dab31915a22073e07b347a331
+  Resolved https://github.com/matplotlib/basemap to commit 5f6a39f46464794dab31915a22073e07b347a331
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: pyproj>=1.9.6 in ./gbm/lib/python3.9/site-packages (from gbm-data-tools==1.1.1) (3.3.1)
+Requirement already satisfied: numpy>=1.17.3 in ./gbm/lib/python3.9/site-packages (from gbm-data-tools==1.1.1) (1.23.1)
+Requirement already satisfied: scipy>=1.1.0 in ./gbm/lib/python3.9/site-packages (from gbm-data-tools==1.1.1) (1.8.1)
+Requirement already satisfied: matplotlib<=3.2.1,>=2.2.3 in ./gbm/lib/python3.9/site-packages (from gbm-data-tools==1.1.1) (3.2.1)
+Requirement already satisfied: astropy>=3.1 in ./gbm/lib/python3.9/site-packages (from gbm-data-tools==1.1.1) (5.1)
+Requirement already satisfied: healpy>=1.12.4 in ./gbm/lib/python3.9/site-packages (from gbm-data-tools==1.1.1) (1.15.2)
+Requirement already satisfied: packaging>=19.0 in ./gbm/lib/python3.9/site-packages (from astropy>=3.1->gbm-data-tools==1.1.1) (21.3)
+Requirement already satisfied: pyerfa>=2.0 in ./gbm/lib/python3.9/site-packages (from astropy>=3.1->gbm-data-tools==1.1.1) (2.0.0.1)
+Requirement already satisfied: PyYAML>=3.13 in ./gbm/lib/python3.9/site-packages (from astropy>=3.1->gbm-data-tools==1.1.1) (6.0)
+Requirement already satisfied: cycler>=0.10 in ./gbm/lib/python3.9/site-packages (from matplotlib<=3.2.1,>=2.2.3->gbm-data-tools==1.1.1) (0.11.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in ./gbm/lib/python3.9/site-packages (from matplotlib<=3.2.1,>=2.2.3->gbm-data-tools==1.1.1) (1.4.3)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in ./gbm/lib/python3.9/site-packages (from matplotlib<=3.2.1,>=2.2.3->gbm-data-tools==1.1.1) (3.0.9)
+Requirement already satisfied: python-dateutil>=2.1 in ./gbm/lib/python3.9/site-packages (from matplotlib<=3.2.1,>=2.2.3->gbm-data-tools==1.1.1) (2.8.2)
+Requirement already satisfied: certifi in ./gbm/lib/python3.9/site-packages (from pyproj>=1.9.6->gbm-data-tools==1.1.1) (2022.6.15)
+Requirement already satisfied: pyshp>=1.2.0 in ./gbm/lib/python3.9/site-packages (from basemap@ git+https://github.com/matplotlib/basemap@v1.2.1rel->gbm-data-tools==1.1.1) (2.3.0)
+Requirement already satisfied: six in ./gbm/lib/python3.9/site-packages (from basemap@ git+https://github.com/matplotlib/basemap@v1.2.1rel->gbm-data-tools==1.1.1) (1.16.0)
+Using legacy 'setup.py install' for basemap, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for gbm-data-tools, since package 'wheel' is not installed.
+Installing collected packages: basemap, gbm-data-tools
+  Attempting uninstall: basemap
+    Found existing installation: basemap 1.3.4
+    Uninstalling basemap-1.3.4:
+      Successfully uninstalled basemap-1.3.4
+  Running setup.py install for basemap ... error
+  error: subprocess-exited-with-error
+  
+  × Running setup.py install for basemap did not run successfully.
+  │ exit code: 1
+  ╰─> [1029 lines of output]
+      /tmp/pip-install-11sg8ro2/basemap_054e458c231945ff9c08f8e039fb97f6/setup.py:21: DeprecationWarning:
+      
+        `numpy.distutils` is deprecated since NumPy 1.23.0, as a result
+        of the deprecation of `distutils` itself. It will be removed for
+        Python >= 3.12. For older Python versions it will remain present.
+        It is recommended to use `setuptools < 60.0` for those Python versions.
+        For more details, see:
+          https://numpy.org/devdocs/reference/distutils_status_migration.html
+      
+      
+        from numpy.distutils.core import setup, Extension
+      running install
+      running build
+      running config_cc
+      INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+      running config_fc
+      INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+      running build_src
+      INFO: build_src
+      INFO: building extension "_geoslib" sources
+      INFO: build_src: building npy-pkg config files
+      running build_py
+      creating build
+      creating build/lib.linux-x86_64-3.9
+      creating build/lib.linux-x86_64-3.9/mpl_toolkits
+      copying lib/mpl_toolkits/__init__.py -> build/lib.linux-x86_64-3.9/mpl_toolkits
+      creating build/lib.linux-x86_64-3.9/mpl_toolkits/basemap
+      copying lib/mpl_toolkits/basemap/diagnostic.py -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap
+      copying lib/mpl_toolkits/basemap/solar.py -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap
+      copying lib/mpl_toolkits/basemap/__init__.py -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap
+      copying lib/mpl_toolkits/basemap/proj.py -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap
+      copying lib/mpl_toolkits/basemap/test.py -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap
+      copying lib/mpl_toolkits/basemap/cm.py -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap
+      creating build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/statesmeta_h.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/rivers_h.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/riversmeta_l.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/lsmask_5min_f.bin -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/lsmask_1.25min_h.bin -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/gshhsmeta_f.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/lsmask_10min_f.bin -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/shadedrelief.jpg -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/lsmask_2.5min_h.bin -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/lsmask_5min_c.bin -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/lsmask_2.5min_l.bin -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/riversmeta_h.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/gshhsmeta_h.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/lsmask_1.25min_c.bin -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/countries_l.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/gshhs_f.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/countries_h.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/lsmask_5min_h.bin -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/rivers_l.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/lsmask_10min_l.bin -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/statesmeta_f.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/countries_f.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/countriesmeta_h.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/lsmask_1.25min_i.bin -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/countriesmeta_f.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/lsmask_1.25min_f.bin -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/lsmask_2.5min_c.bin -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/rivers_f.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/etopo1.jpg -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/UScounties.dbf -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/gshhs_h.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/riversmeta_i.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/countries_i.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/gshhs_i.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/lsmask_5min_i.bin -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/lsmask_10min_h.bin -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/countriesmeta_l.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/gshhs_l.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/gshhsmeta_i.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/statesmeta_i.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/countriesmeta_i.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/lsmask_10min_c.bin -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/statesmeta_l.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/bmng.jpg -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/UScounties.shx -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/riversmeta_f.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/gshhsmeta_c.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/rivers_i.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/states_i.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/states_h.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/statesmeta_c.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/riversmeta_c.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/countriesmeta_c.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/gshhs_c.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/lsmask_1.25min_l.bin -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/lsmask_5min_l.bin -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/states_f.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/lsmask_10min_i.bin -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/countries_c.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/states_l.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/epsg -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/states_c.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/lsmask_2.5min_i.bin -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/UScounties.prj -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/lsmask_2.5min_f.bin -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/rivers_c.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/UScounties.shp -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      copying lib/mpl_toolkits/basemap/data/gshhsmeta_l.dat -> build/lib.linux-x86_64-3.9/mpl_toolkits/basemap/data
+      running build_ext
+      INFO: customize UnixCCompiler
+      INFO: customize UnixCCompiler using build_ext
+      INFO: CCompilerOpt.cc_test_flags[1073] : testing flags (-march=native)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      creating /tmp/tmp5d0z2cte/home
+      creating /tmp/tmp5d0z2cte/home/doc_ayush
+      creating /tmp/tmp5d0z2cte/home/doc_ayush/gbm
+      creating /tmp/tmp5d0z2cte/home/doc_ayush/gbm/lib
+      creating /tmp/tmp5d0z2cte/home/doc_ayush/gbm/lib/python3.9
+      creating /tmp/tmp5d0z2cte/home/doc_ayush/gbm/lib/python3.9/site-packages
+      creating /tmp/tmp5d0z2cte/home/doc_ayush/gbm/lib/python3.9/site-packages/numpy
+      creating /tmp/tmp5d0z2cte/home/doc_ayush/gbm/lib/python3.9/site-packages/numpy/distutils
+      creating /tmp/tmp5d0z2cte/home/doc_ayush/gbm/lib/python3.9/site-packages/numpy/distutils/checks
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-march=native'
+      INFO: CCompilerOpt.cc_test_flags[1073] : testing flags (-O3)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-O3'
+      INFO: CCompilerOpt.cc_test_flags[1073] : testing flags (-Werror)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-Werror'
+      INFO: CCompilerOpt.__init__[1782] : check requested baseline
+      INFO: CCompilerOpt.cc_test_flags[1073] : testing flags (-msse)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse'
+      INFO: CCompilerOpt.cc_test_flags[1073] : testing flags (-msse2)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse2'
+      INFO: CCompilerOpt.feature_test[1547] : testing feature 'SSE' with flags (-msse -msse2)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -Werror'
+      INFO: CCompilerOpt.feature_test[1547] : testing feature 'SSE2' with flags (-msse -msse2)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -Werror'
+      INFO: CCompilerOpt.cc_test_flags[1073] : testing flags (-msse3)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse3'
+      INFO: CCompilerOpt.feature_test[1547] : testing feature 'SSE3' with flags (-msse -msse2 -msse3)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -msse3 -Werror'
+      INFO: CCompilerOpt.__init__[1791] : check requested dispatch-able features
+      INFO: CCompilerOpt.cc_test_flags[1073] : testing flags (-mssse3)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-mssse3'
+      INFO: CCompilerOpt.feature_test[1547] : testing feature 'SSSE3' with flags (-msse -msse2 -msse3 -mssse3)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -msse3 -mssse3 -Werror'
+      INFO: CCompilerOpt.cc_test_flags[1073] : testing flags (-msse4.1)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse4.1'
+      INFO: CCompilerOpt.cc_test_flags[1073] : testing flags (-mpopcnt)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-mpopcnt'
+      INFO: CCompilerOpt.cc_test_flags[1073] : testing flags (-msse4.2)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse4.2'
+      INFO: CCompilerOpt.cc_test_flags[1073] : testing flags (-mavx)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-mavx'
+      INFO: CCompilerOpt.feature_test[1547] : testing feature 'AVX' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -Werror'
+      INFO: CCompilerOpt.feature_test[1547] : testing feature 'POPCNT' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -Werror'
+      INFO: CCompilerOpt.feature_test[1547] : testing feature 'SSE41' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -Werror'
+      INFO: CCompilerOpt.feature_test[1547] : testing feature 'SSE42' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -Werror'
+      INFO: CCompilerOpt.cc_test_flags[1073] : testing flags (-mf16c)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-mf16c'
+      INFO: CCompilerOpt.feature_test[1547] : testing feature 'F16C' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -Werror'
+      INFO: CCompilerOpt.cc_test_flags[1073] : testing flags (-mfma)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-mfma'
+      INFO: CCompilerOpt.feature_test[1547] : testing feature 'FMA3' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -Werror'
+      INFO: CCompilerOpt.cc_test_flags[1073] : testing flags (-mavx2)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-mavx2'
+      INFO: CCompilerOpt.feature_test[1547] : testing feature 'AVX2' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mavx2)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mavx2 -Werror'
+      INFO: CCompilerOpt.cc_test_flags[1073] : testing flags (-mavx512f -mno-mmx)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-mavx512f -mno-mmx'
+      INFO: CCompilerOpt.cc_test_flags[1073] : testing flags (-mavx512cd)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-mavx512cd'
+      INFO: CCompilerOpt.feature_test[1547] : testing feature 'AVX512CD' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mno-mmx -mavx512cd)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mno-mmx -mavx512cd -Werror'
+      INFO: CCompilerOpt.feature_test[1547] : testing feature 'AVX512F' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mno-mmx)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mno-mmx -Werror'
+      INFO: CCompilerOpt.cc_test_flags[1073] : testing flags (-mavx512vl -mavx512bw -mavx512dq)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-mavx512vl -mavx512bw -mavx512dq'
+      INFO: CCompilerOpt.feature_test[1547] : testing feature 'AVX512_SKX' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mno-mmx -mavx512cd -mavx512vl -mavx512bw -mavx512dq)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mno-mmx -mavx512cd -mavx512vl -mavx512bw -mavx512dq -Werror'
+      INFO: CCompilerOpt.cc_test_flags[1073] : testing flags (-mavx512ifma -mavx512vbmi)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-mavx512ifma -mavx512vbmi'
+      INFO: CCompilerOpt.feature_test[1547] : testing feature 'AVX512_CNL' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mno-mmx -mavx512cd -mavx512vl -mavx512bw -mavx512dq -mavx512ifma -mavx512vbmi)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mno-mmx -mavx512cd -mavx512vl -mavx512bw -mavx512dq -mavx512ifma -mavx512vbmi -Werror'
+      INFO: CCompilerOpt.cc_test_flags[1073] : testing flags (-mavx512vnni)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-mavx512vnni'
+      WARN: CCompilerOpt.dist_test[630] : CCompilerOpt._dist_test_spawn[764] : Command (gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c /home/doc_ayush/gbm/lib/python3.9/site-packages/numpy/distutils/checks/test_flags.c -o /tmp/tmp5d0z2cte/home/doc_ayush/gbm/lib/python3.9/site-packages/numpy/distutils/checks/test_flags.o -MMD -MF /tmp/tmp5d0z2cte/home/doc_ayush/gbm/lib/python3.9/site-packages/numpy/distutils/checks/test_flags.o.d -mavx512vnni) failed with exit status 1 output ->
+      gcc: error: unrecognized command line option ‘-mavx512vnni’; did you mean ‘-mavx5124vnniw’?
+      
+      WARN: CCompilerOpt.cc_test_flags[1077] : testing failed
+      INFO: CCompilerOpt.feature_test[1547] : testing feature 'AVX512_CLX' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mno-mmx -mavx512cd -mavx512vl -mavx512bw -mavx512dq)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mno-mmx -mavx512cd -mavx512vl -mavx512bw -mavx512dq -Werror'
+      WARN: CCompilerOpt.dist_test[630] : CCompilerOpt._dist_test_spawn[764] : Command (gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c /home/doc_ayush/gbm/lib/python3.9/site-packages/numpy/distutils/checks/cpu_avx512_clx.c -o /tmp/tmp5d0z2cte/home/doc_ayush/gbm/lib/python3.9/site-packages/numpy/distutils/checks/cpu_avx512_clx.o -MMD -MF /tmp/tmp5d0z2cte/home/doc_ayush/gbm/lib/python3.9/site-packages/numpy/distutils/checks/cpu_avx512_clx.o.d -msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mno-mmx -mavx512cd -mavx512vl -mavx512bw -mavx512dq -Werror) failed with exit status 1 output ->
+      /home/doc_ayush/gbm/lib/python3.9/site-packages/numpy/distutils/checks/cpu_avx512_clx.c: In function ‘main’:
+      /home/doc_ayush/gbm/lib/python3.9/site-packages/numpy/distutils/checks/cpu_avx512_clx.c:20:17: error: implicit declaration of function ‘_mm512_dpbusd_epi32’; did you mean ‘_mm512_4dpwssd_epi32’? [-Werror=implicit-function-declaration]
+                   a = _mm512_dpbusd_epi32(a, _mm512_setzero_si512(), a);
+                       ^~~~~~~~~~~~~~~~~~~
+                       _mm512_4dpwssd_epi32
+      /home/doc_ayush/gbm/lib/python3.9/site-packages/numpy/distutils/checks/cpu_avx512_clx.c:20:15: error: incompatible types when assigning to type ‘__m512i {aka __vector(8) long long int}’ from type ‘int’
+                   a = _mm512_dpbusd_epi32(a, _mm512_setzero_si512(), a);
+                     ^
+      cc1: all warnings being treated as errors
+      
+      WARN: CCompilerOpt.feature_test[1563] : testing failed
+      INFO: CCompilerOpt.cc_test_flags[1073] : testing flags (-mavx512er -mavx512pf)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-mavx512er -mavx512pf'
+      INFO: CCompilerOpt.feature_test[1547] : testing feature 'AVX512_KNL' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mno-mmx -mavx512cd -mavx512er -mavx512pf)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mno-mmx -mavx512cd -mavx512er -mavx512pf -Werror'
+      INFO: CCompilerOpt.cc_test_flags[1073] : testing flags (-mavx5124fmaps -mavx5124vnniw -mavx512vpopcntdq)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-mavx5124fmaps -mavx5124vnniw -mavx512vpopcntdq'
+      INFO: CCompilerOpt.feature_test[1547] : testing feature 'AVX512_KNM' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mno-mmx -mavx512cd -mavx512er -mavx512pf -mavx5124fmaps -mavx5124vnniw -mavx512vpopcntdq)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mno-mmx -mavx512cd -mavx512er -mavx512pf -mavx5124fmaps -mavx5124vnniw -mavx512vpopcntdq -Werror'
+      INFO: CCompilerOpt.__init__[1803] : skip features (SSE2 SSE SSE3) since its part of baseline
+      INFO: CCompilerOpt.__init__[1807] : initialize targets groups
+      INFO: CCompilerOpt.__init__[1809] : parse target group simd_test
+      INFO: CCompilerOpt._parse_target_tokens[2020] : skip targets (VSX2 VSX VXE VSX3 VXE2 VSX4 VX XOP NEON ASIMD FMA4) not part of baseline or dispatch-able features
+      INFO: CCompilerOpt._parse_policy_not_keepbase[2132] : skip baseline features (SSE2)
+      INFO: CCompilerOpt.generate_dispatch_header[2353] : generate CPU dispatch header: (build/src.linux-x86_64-3.9/numpy/distutils/include/npy_cpu_dispatch_config.h)
+      WARN: CCompilerOpt.generate_dispatch_header[2362] : dispatch header dir build/src.linux-x86_64-3.9/numpy/distutils/include does not exist, creating it
+      INFO: CCompilerOpt.feature_extra_checks[1627] : Testing extra checks for feature 'AVX512F' (AVX512F_REDUCE)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mno-mmx -Werror'
+      INFO: CCompilerOpt.feature_extra_checks[1627] : Testing extra checks for feature 'AVX512_SKX' (AVX512BW_MASK AVX512DQ_MASK)
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mno-mmx -mavx512cd -mavx512vl -mavx512bw -mavx512dq -Werror'
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      INFO: compile options: '-I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mno-mmx -mavx512cd -mavx512vl -mavx512bw -mavx512dq -Werror'
+      INFO: building '_geoslib' extension
+      INFO: compiling C sources
+      INFO: C compiler: gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC
+      
+      creating build/temp.linux-x86_64-3.9/src
+      INFO: compile options: '-I/home/doc_ayush/.geos_dir/include -I/home/doc_ayush/gbm/lib/python3.9/site-packages/numpy/core/include -I/home/doc_ayush/gbm/lib/python3.9/site-packages/numpy/core/include -Ibuild/src.linux-x86_64-3.9/numpy/distutils/include -I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c'
+      extra options: '-msse -msse2 -msse3'
+      INFO: gcc: src/_geoslib.c
+      In file included from /home/doc_ayush/gbm/lib/python3.9/site-packages/numpy/core/include/numpy/ndarraytypes.h:1948:0,
+                       from /home/doc_ayush/gbm/lib/python3.9/site-packages/numpy/core/include/numpy/ndarrayobject.h:12,
+                       from /home/doc_ayush/gbm/lib/python3.9/site-packages/numpy/core/include/numpy/arrayobject.h:5,
+                       from src/_geoslib.c:565:
+      /home/doc_ayush/gbm/lib/python3.9/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:17:2: warning: #warning "Using deprecated NumPy API, disable it with " "#define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+       #warning "Using deprecated NumPy API, disable it with " \
+        ^~~~~~~
+      src/_geoslib.c: In function ‘__pyx_pf_8_geoslib_12BaseGeometry_is_valid’:
+      src/_geoslib.c:1602:31: warning: passing argument 1 of ‘GEOSisValid’ from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_valid = GEOSisValid(__pyx_v_self->_geom);
+                                     ^~~~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1840:22: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern char GEOS_DLL GEOSisValid(const GEOSGeometry* g);
+                            ^~~~~~~~~~~
+      src/_geoslib.c: In function ‘__pyx_pf_8_geoslib_12BaseGeometry_2geom_type’:
+      src/_geoslib.c:1699:47: warning: passing argument 1 of ‘GEOSGeomType’ from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_t_1 = PyBytes_FromString(GEOSGeomType(__pyx_v_self->_geom)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 152, __pyx_L1_error)
+                                                     ^~~~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1861:23: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern char GEOS_DLL *GEOSGeomType(const GEOSGeometry* g);
+                             ^~~~~~~~~~~~
+      src/_geoslib.c: In function ‘__pyx_pf_8_geoslib_12BaseGeometry_4within’:
+      src/_geoslib.c:1787:31: warning: passing argument 1 of ‘GEOSWithin’ from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_answer = GEOSWithin(__pyx_v_g1, __pyx_v_g2);
+                                     ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1665:22: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern char GEOS_DLL GEOSWithin(const GEOSGeometry* g1, const GEOSGeometry* g2);
+                            ^~~~~~~~~~
+      src/_geoslib.c:1787:43: warning: passing argument 2 of ‘GEOSWithin’ from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_answer = GEOSWithin(__pyx_v_g1, __pyx_v_g2);
+                                                 ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1665:22: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern char GEOS_DLL GEOSWithin(const GEOSGeometry* g1, const GEOSGeometry* g2);
+                            ^~~~~~~~~~
+      src/_geoslib.c: In function ‘__pyx_pf_8_geoslib_12BaseGeometry_6union’:
+      src/_geoslib.c:1919:26: warning: passing argument 1 of ‘GEOSUnion’ from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_g3 = GEOSUnion(__pyx_v_g1, __pyx_v_g2);
+                                ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1541:31: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern GEOSGeometry GEOS_DLL *GEOSUnion(const GEOSGeometry* g1, const GEOSGeometry* g2);
+                                     ^~~~~~~~~
+      src/_geoslib.c:1919:38: warning: passing argument 2 of ‘GEOSUnion’ from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_g3 = GEOSUnion(__pyx_v_g1, __pyx_v_g2);
+                                            ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1541:31: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern GEOSGeometry GEOS_DLL *GEOSUnion(const GEOSGeometry* g1, const GEOSGeometry* g2);
+                                     ^~~~~~~~~
+      src/_geoslib.c:1919:14: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_g3 = GEOSUnion(__pyx_v_g1, __pyx_v_g2);
+                    ^
+      src/_geoslib.c:1928:35: warning: passing argument 1 of ‘GEOSGeomTypeId’ from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_typeid = GEOSGeomTypeId(__pyx_v_g3);
+                                         ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1864:21: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern int GEOS_DLL GEOSGeomTypeId(const GEOSGeometry* g);
+                           ^~~~~~~~~~~~~~
+      src/_geoslib.c:2031:45: warning: passing argument 1 of ‘GEOSGetNumGeometries’ from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_numgeoms = GEOSGetNumGeometries(__pyx_v_g3);
+                                                   ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1882:21: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern int GEOS_DLL GEOSGetNumGeometries(const GEOSGeometry* g);
+                           ^~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:2040:37: warning: passing argument 1 of ‘GEOSGetGeometryN’ from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_gout = GEOSGetGeometryN(__pyx_v_g3, 0);
+                                           ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1892:37: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern const GEOSGeometry GEOS_DLL *GEOSGetGeometryN(const GEOSGeometry* g, int n);
+                                           ^~~~~~~~~~~~~~~~
+      src/_geoslib.c:2040:18: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_gout = GEOSGetGeometryN(__pyx_v_g3, 0);
+                        ^
+      src/_geoslib.c:2091:45: warning: passing argument 1 of ‘GEOSGetNumGeometries’ from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_numgeoms = GEOSGetNumGeometries(__pyx_v_g3);
+                                                   ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1882:21: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern int GEOS_DLL GEOSGetNumGeometries(const GEOSGeometry* g);
+                           ^~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:2100:37: warning: passing argument 1 of ‘GEOSGetGeometryN’ from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_gout = GEOSGetGeometryN(__pyx_v_g3, 0);
+                                           ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1892:37: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern const GEOSGeometry GEOS_DLL *GEOSGetGeometryN(const GEOSGeometry* g, int n);
+                                           ^~~~~~~~~~~~~~~~
+      src/_geoslib.c:2100:18: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_gout = GEOSGetGeometryN(__pyx_v_g3, 0);
+                        ^
+      src/_geoslib.c:2143:49: warning: passing argument 1 of ‘GEOSGeomType’ from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_t_2 = PyBytes_FromString(GEOSGeomType(__pyx_v_g3)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 194, __pyx_L1_error)
+                                                       ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1861:23: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern char GEOS_DLL *GEOSGeomType(const GEOSGeometry* g);
+                             ^~~~~~~~~~~~
+      src/_geoslib.c:2173:20: warning: passing argument 1 of ‘GEOSGeom_destroy’ from incompatible pointer type [-Wincompatible-pointer-types]
+         GEOSGeom_destroy(__pyx_v_g3);
+                          ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1485:22: note: expected ‘GEOSGeometry * {aka struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern void GEOS_DLL GEOSGeom_destroy(GEOSGeometry* g);
+                            ^~~~~~~~~~~~~~~~
+      src/_geoslib.c: In function ‘__pyx_pf_8_geoslib_12BaseGeometry_8simplify’:
+      src/_geoslib.c:2276:29: warning: passing argument 1 of ‘GEOSSimplify’ from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_g3 = GEOSSimplify(__pyx_v_g1, __pyx_v_tolerance);
+                                   ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1588:31: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern GEOSGeometry GEOS_DLL *GEOSSimplify(const GEOSGeometry* g, double tolerance);
+                                     ^~~~~~~~~~~~
+      src/_geoslib.c:2276:14: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_g3 = GEOSSimplify(__pyx_v_g1, __pyx_v_tolerance);
+                    ^
+      src/_geoslib.c:2285:35: warning: passing argument 1 of ‘GEOSGeomTypeId’ from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_typeid = GEOSGeomTypeId(__pyx_v_g3);
+                                         ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1864:21: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern int GEOS_DLL GEOSGeomTypeId(const GEOSGeometry* g);
+                           ^~~~~~~~~~~~~~
+      src/_geoslib.c:2388:45: warning: passing argument 1 of ‘GEOSGetNumGeometries’ from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_numgeoms = GEOSGetNumGeometries(__pyx_v_g3);
+                                                   ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1882:21: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern int GEOS_DLL GEOSGetNumGeometries(const GEOSGeometry* g);
+                           ^~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:2397:37: warning: passing argument 1 of ‘GEOSGetGeometryN’ from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_gout = GEOSGetGeometryN(__pyx_v_g3, 0);
+                                           ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1892:37: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern const GEOSGeometry GEOS_DLL *GEOSGetGeometryN(const GEOSGeometry* g, int n);
+                                           ^~~~~~~~~~~~~~~~
+      src/_geoslib.c:2397:18: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_gout = GEOSGetGeometryN(__pyx_v_g3, 0);
+                        ^
+      src/_geoslib.c:2448:45: warning: passing argument 1 of ‘GEOSGetNumGeometries’ from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_numgeoms = GEOSGetNumGeometries(__pyx_v_g3);
+                                                   ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1882:21: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern int GEOS_DLL GEOSGetNumGeometries(const GEOSGeometry* g);
+                           ^~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:2457:37: warning: passing argument 1 of ‘GEOSGetGeometryN’ from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_gout = GEOSGetGeometryN(__pyx_v_g3, 0);
+                                           ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1892:37: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern const GEOSGeometry GEOS_DLL *GEOSGetGeometryN(const GEOSGeometry* g, int n);
+                                           ^~~~~~~~~~~~~~~~
+      src/_geoslib.c:2457:18: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_gout = GEOSGetGeometryN(__pyx_v_g3, 0);
+                        ^
+      src/_geoslib.c:2500:49: warning: passing argument 1 of ‘GEOSGeomType’ from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_t_3 = PyBytes_FromString(GEOSGeomType(__pyx_v_g3)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 227, __pyx_L1_error)
+                                                       ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1861:23: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern char GEOS_DLL *GEOSGeomType(const GEOSGeometry* g);
+                             ^~~~~~~~~~~~
+      src/_geoslib.c:2530:20: warning: passing argument 1 of ‘GEOSGeom_destroy’ from incompatible pointer type [-Wincompatible-pointer-types]
+         GEOSGeom_destroy(__pyx_v_g3);
+                          ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1485:22: note: expected ‘GEOSGeometry * {aka struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern void GEOS_DLL GEOSGeom_destroy(GEOSGeometry* g);
+                            ^~~~~~~~~~~~~~~~
+      src/_geoslib.c: In function ‘__pyx_pf_8_geoslib_12BaseGeometry_10fix’:
+      src/_geoslib.c:2621:27: warning: passing argument 1 of ‘GEOSBuffer’ from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_g3 = GEOSBuffer(__pyx_v_g1, 0., 0);
+                                 ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1391:31: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern GEOSGeometry GEOS_DLL *GEOSBuffer(const GEOSGeometry* g,
+                                     ^~~~~~~~~~
+      src/_geoslib.c:2621:14: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_g3 = GEOSBuffer(__pyx_v_g1, 0., 0);
+                    ^
+      src/_geoslib.c:2630:35: warning: passing argument 1 of ‘GEOSGeomTypeId’ from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_typeid = GEOSGeomTypeId(__pyx_v_g3);
+                                         ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1864:21: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern int GEOS_DLL GEOSGeomTypeId(const GEOSGeometry* g);
+                           ^~~~~~~~~~~~~~
+      src/_geoslib.c:2733:45: warning: passing argument 1 of ‘GEOSGetNumGeometries’ from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_numgeoms = GEOSGetNumGeometries(__pyx_v_g3);
+                                                   ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1882:21: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern int GEOS_DLL GEOSGetNumGeometries(const GEOSGeometry* g);
+                           ^~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:2742:37: warning: passing argument 1 of ‘GEOSGetGeometryN’ from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_gout = GEOSGetGeometryN(__pyx_v_g3, 0);
+                                           ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1892:37: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern const GEOSGeometry GEOS_DLL *GEOSGetGeometryN(const GEOSGeometry* g, int n);
+                                           ^~~~~~~~~~~~~~~~
+      src/_geoslib.c:2742:18: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_gout = GEOSGetGeometryN(__pyx_v_g3, 0);
+                        ^
+      src/_geoslib.c:2793:45: warning: passing argument 1 of ‘GEOSGetNumGeometries’ from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_numgeoms = GEOSGetNumGeometries(__pyx_v_g3);
+                                                   ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1882:21: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern int GEOS_DLL GEOSGetNumGeometries(const GEOSGeometry* g);
+                           ^~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:2802:37: warning: passing argument 1 of ‘GEOSGetGeometryN’ from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_gout = GEOSGetGeometryN(__pyx_v_g3, 0);
+                                           ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1892:37: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern const GEOSGeometry GEOS_DLL *GEOSGetGeometryN(const GEOSGeometry* g, int n);
+                                           ^~~~~~~~~~~~~~~~
+      src/_geoslib.c:2802:18: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_gout = GEOSGetGeometryN(__pyx_v_g3, 0);
+                        ^
+      src/_geoslib.c:2845:49: warning: passing argument 1 of ‘GEOSGeomType’ from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_t_2 = PyBytes_FromString(GEOSGeomType(__pyx_v_g3)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 258, __pyx_L1_error)
+                                                       ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1861:23: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern char GEOS_DLL *GEOSGeomType(const GEOSGeometry* g);
+                             ^~~~~~~~~~~~
+      src/_geoslib.c:2875:20: warning: passing argument 1 of ‘GEOSGeom_destroy’ from incompatible pointer type [-Wincompatible-pointer-types]
+         GEOSGeom_destroy(__pyx_v_g3);
+                          ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1485:22: note: expected ‘GEOSGeometry * {aka struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern void GEOS_DLL GEOSGeom_destroy(GEOSGeometry* g);
+                            ^~~~~~~~~~~~~~~~
+      src/_geoslib.c: In function ‘__pyx_pf_8_geoslib_12BaseGeometry_12intersects’:
+      src/_geoslib.c:2975:35: warning: passing argument 1 of ‘GEOSIntersects’ from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_answer = GEOSIntersects(__pyx_v_g1, __pyx_v_g2);
+                                         ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1663:22: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern char GEOS_DLL GEOSIntersects(const GEOSGeometry* g1, const GEOSGeometry* g2);
+                            ^~~~~~~~~~~~~~
+      src/_geoslib.c:2975:47: warning: passing argument 2 of ‘GEOSIntersects’ from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_answer = GEOSIntersects(__pyx_v_g1, __pyx_v_g2);
+                                                     ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1663:22: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern char GEOS_DLL GEOSIntersects(const GEOSGeometry* g1, const GEOSGeometry* g2);
+                            ^~~~~~~~~~~~~~
+      src/_geoslib.c: In function ‘__pyx_pf_8_geoslib_12BaseGeometry_14intersection’:
+      src/_geoslib.c:3109:33: warning: passing argument 1 of ‘GEOSIntersection’ from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_g3 = GEOSIntersection(__pyx_v_g1, __pyx_v_g2);
+                                       ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1494:31: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern GEOSGeometry GEOS_DLL *GEOSIntersection(const GEOSGeometry* g1, const GEOSGeometry* g2);
+                                     ^~~~~~~~~~~~~~~~
+      src/_geoslib.c:3109:45: warning: passing argument 2 of ‘GEOSIntersection’ from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_g3 = GEOSIntersection(__pyx_v_g1, __pyx_v_g2);
+                                                   ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1494:31: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern GEOSGeometry GEOS_DLL *GEOSIntersection(const GEOSGeometry* g1, const GEOSGeometry* g2);
+                                     ^~~~~~~~~~~~~~~~
+      src/_geoslib.c:3109:14: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_g3 = GEOSIntersection(__pyx_v_g1, __pyx_v_g2);
+                    ^
+      src/_geoslib.c:3118:35: warning: passing argument 1 of ‘GEOSGeomTypeId’ from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_typeid = GEOSGeomTypeId(__pyx_v_g3);
+                                         ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1864:21: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern int GEOS_DLL GEOSGeomTypeId(const GEOSGeometry* g);
+                           ^~~~~~~~~~~~~~
+      src/_geoslib.c:3251:45: warning: passing argument 1 of ‘GEOSGetNumGeometries’ from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_numgeoms = GEOSGetNumGeometries(__pyx_v_g3);
+                                                   ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1882:21: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern int GEOS_DLL GEOSGetNumGeometries(const GEOSGeometry* g);
+                           ^~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:3282:39: warning: passing argument 1 of ‘GEOSGetGeometryN’ from incompatible pointer type [-Wincompatible-pointer-types]
+             __pyx_v_gout = GEOSGetGeometryN(__pyx_v_g3, __pyx_v_i);
+                                             ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1892:37: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern const GEOSGeometry GEOS_DLL *GEOSGetGeometryN(const GEOSGeometry* g, int n);
+                                           ^~~~~~~~~~~~~~~~
+      src/_geoslib.c:3282:20: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+             __pyx_v_gout = GEOSGetGeometryN(__pyx_v_g3, __pyx_v_i);
+                          ^
+      src/_geoslib.c:3343:45: warning: passing argument 1 of ‘GEOSGetNumGeometries’ from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_numgeoms = GEOSGetNumGeometries(__pyx_v_g3);
+                                                   ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1882:21: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern int GEOS_DLL GEOSGetNumGeometries(const GEOSGeometry* g);
+                           ^~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:3374:39: warning: passing argument 1 of ‘GEOSGetGeometryN’ from incompatible pointer type [-Wincompatible-pointer-types]
+             __pyx_v_gout = GEOSGetGeometryN(__pyx_v_g3, __pyx_v_i);
+                                             ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1892:37: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern const GEOSGeometry GEOS_DLL *GEOSGetGeometryN(const GEOSGeometry* g, int n);
+                                           ^~~~~~~~~~~~~~~~
+      src/_geoslib.c:3374:20: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+             __pyx_v_gout = GEOSGetGeometryN(__pyx_v_g3, __pyx_v_i);
+                          ^
+      src/_geoslib.c:3427:22: warning: passing argument 1 of ‘GEOSGeom_destroy’ from incompatible pointer type [-Wincompatible-pointer-types]
+           GEOSGeom_destroy(__pyx_v_g3);
+                            ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1485:22: note: expected ‘GEOSGeometry * {aka struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern void GEOS_DLL GEOSGeom_destroy(GEOSGeometry* g);
+                            ^~~~~~~~~~~~~~~~
+      src/_geoslib.c:3452:20: warning: passing argument 1 of ‘GEOSGeom_destroy’ from incompatible pointer type [-Wincompatible-pointer-types]
+         GEOSGeom_destroy(__pyx_v_g3);
+                          ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1485:22: note: expected ‘GEOSGeometry * {aka struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern void GEOS_DLL GEOSGeom_destroy(GEOSGeometry* g);
+                            ^~~~~~~~~~~~~~~~
+      src/_geoslib.c: In function ‘__pyx_pf_8_geoslib_12BaseGeometry_18__dealloc__’:
+      src/_geoslib.c:3578:20: warning: passing argument 1 of ‘GEOSGeom_destroy’ from incompatible pointer type [-Wincompatible-pointer-types]
+         GEOSGeom_destroy(__pyx_v_self->_geom);
+                          ^~~~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1485:22: note: expected ‘GEOSGeometry * {aka struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern void GEOS_DLL GEOSGeom_destroy(GEOSGeometry* g);
+                            ^~~~~~~~~~~~~~~~
+      src/_geoslib.c: In function ‘__pyx_pf_8_geoslib_7Polygon___init__’:
+      src/_geoslib.c:4001:14: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_cs = GEOSCoordSeq_create(__pyx_v_M, 2);
+                    ^
+      src/_geoslib.c:4047:30: warning: passing argument 1 of ‘GEOSCoordSeq_setX’ from incompatible pointer type [-Wincompatible-pointer-types]
+           (void)(GEOSCoordSeq_setX(__pyx_v_cs, __pyx_v_i, __pyx_v_dx));
+                                    ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1325:21: note: expected ‘GEOSCoordSequence * {aka struct GEOSCoordSeq_t *}’ but argument is of type ‘GEOSCoordSequence ** {aka struct GEOSCoordSeq_t **}’
+       extern int GEOS_DLL GEOSCoordSeq_setX(GEOSCoordSequence* s,
+                           ^~~~~~~~~~~~~~~~~
+      src/_geoslib.c:4056:30: warning: passing argument 1 of ‘GEOSCoordSeq_setY’ from incompatible pointer type [-Wincompatible-pointer-types]
+           (void)(GEOSCoordSeq_setY(__pyx_v_cs, __pyx_v_i, __pyx_v_dy));
+                                    ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1327:21: note: expected ‘GEOSCoordSequence * {aka struct GEOSCoordSeq_t *}’ but argument is of type ‘GEOSCoordSequence ** {aka struct GEOSCoordSeq_t **}’
+       extern int GEOS_DLL GEOSCoordSeq_setY(GEOSCoordSequence* s,
+                           ^~~~~~~~~~~~~~~~~
+      src/_geoslib.c:4094:30: warning: passing argument 1 of ‘GEOSCoordSeq_setX’ from incompatible pointer type [-Wincompatible-pointer-types]
+           (void)(GEOSCoordSeq_setX(__pyx_v_cs, (__pyx_v_M - 1), __pyx_v_dx));
+                                    ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1325:21: note: expected ‘GEOSCoordSequence * {aka struct GEOSCoordSeq_t *}’ but argument is of type ‘GEOSCoordSequence ** {aka struct GEOSCoordSeq_t **}’
+       extern int GEOS_DLL GEOSCoordSeq_setX(GEOSCoordSequence* s,
+                           ^~~~~~~~~~~~~~~~~
+      src/_geoslib.c:4103:30: warning: passing argument 1 of ‘GEOSCoordSeq_setY’ from incompatible pointer type [-Wincompatible-pointer-types]
+           (void)(GEOSCoordSeq_setY(__pyx_v_cs, (__pyx_v_M - 1), __pyx_v_dy));
+                                    ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1327:21: note: expected ‘GEOSCoordSequence * {aka struct GEOSCoordSeq_t *}’ but argument is of type ‘GEOSCoordSequence ** {aka struct GEOSCoordSeq_t **}’
+       extern int GEOS_DLL GEOSCoordSeq_setY(GEOSCoordSequence* s,
+                           ^~~~~~~~~~~~~~~~~
+      src/_geoslib.c:4121:42: warning: passing argument 1 of ‘GEOSGeom_createLinearRing’ from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_lr = GEOSGeom_createLinearRing(__pyx_v_cs);
+                                                ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1461:31: note: expected ‘GEOSCoordSequence * {aka struct GEOSCoordSeq_t *}’ but argument is of type ‘GEOSCoordSequence ** {aka struct GEOSCoordSeq_t **}’
+       extern GEOSGeometry GEOS_DLL *GEOSGeom_createLinearRing(GEOSCoordSequence* s);
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:4121:14: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_lr = GEOSGeom_createLinearRing(__pyx_v_cs);
+                    ^
+      src/_geoslib.c:4130:59: warning: passing argument 1 of ‘GEOSGeom_createPolygon’ from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_self->__pyx_base._geom = GEOSGeom_createPolygon(__pyx_v_lr, NULL, 0);
+                                                                 ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1471:31: note: expected ‘GEOSGeometry * {aka struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern GEOSGeometry GEOS_DLL *GEOSGeom_createPolygon(GEOSGeometry* shell,
+                                     ^~~~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:4130:34: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_self->__pyx_base._geom = GEOSGeom_createPolygon(__pyx_v_lr, NULL, 0);
+                                        ^
+      src/_geoslib.c: In function ‘__pyx_pf_8_geoslib_7Polygon_2area’:
+      src/_geoslib.c:4203:19: warning: passing argument 1 of ‘GEOSArea’ from incompatible pointer type [-Wincompatible-pointer-types]
+         (void)(GEOSArea(__pyx_v_self->__pyx_base._geom, (&__pyx_v_area)));
+                         ^~~~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1962:21: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern int GEOS_DLL GEOSArea(const GEOSGeometry* g, double *area);
+                           ^~~~~~~~
+      src/_geoslib.c: In function ‘__pyx_pf_8_geoslib_10LineString___init__’:
+      src/_geoslib.c:4400:14: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_cs = GEOSCoordSeq_create(__pyx_v_M, 2);
+                    ^
+      src/_geoslib.c:4446:30: warning: passing argument 1 of ‘GEOSCoordSeq_setX’ from incompatible pointer type [-Wincompatible-pointer-types]
+           (void)(GEOSCoordSeq_setX(__pyx_v_cs, __pyx_v_i, __pyx_v_dx));
+                                    ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1325:21: note: expected ‘GEOSCoordSequence * {aka struct GEOSCoordSeq_t *}’ but argument is of type ‘GEOSCoordSequence ** {aka struct GEOSCoordSeq_t **}’
+       extern int GEOS_DLL GEOSCoordSeq_setX(GEOSCoordSequence* s,
+                           ^~~~~~~~~~~~~~~~~
+      src/_geoslib.c:4455:30: warning: passing argument 1 of ‘GEOSCoordSeq_setY’ from incompatible pointer type [-Wincompatible-pointer-types]
+           (void)(GEOSCoordSeq_setY(__pyx_v_cs, __pyx_v_i, __pyx_v_dy));
+                                    ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1327:21: note: expected ‘GEOSCoordSequence * {aka struct GEOSCoordSeq_t *}’ but argument is of type ‘GEOSCoordSequence ** {aka struct GEOSCoordSeq_t **}’
+       extern int GEOS_DLL GEOSCoordSeq_setY(GEOSCoordSequence* s,
+                           ^~~~~~~~~~~~~~~~~
+      src/_geoslib.c:4465:62: warning: passing argument 1 of ‘GEOSGeom_createLineString’ from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_self->__pyx_base._geom = GEOSGeom_createLineString(__pyx_v_cs);
+                                                                    ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1462:31: note: expected ‘GEOSCoordSequence * {aka struct GEOSCoordSeq_t *}’ but argument is of type ‘GEOSCoordSequence ** {aka struct GEOSCoordSeq_t **}’
+       extern GEOSGeometry GEOS_DLL *GEOSGeom_createLineString(GEOSCoordSequence* s);
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:4465:34: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_self->__pyx_base._geom = GEOSGeom_createLineString(__pyx_v_cs);
+                                        ^
+      src/_geoslib.c: In function ‘__pyx_pf_8_geoslib_5Point___init__’:
+      src/_geoslib.c:4578:14: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_cs = GEOSCoordSeq_create(1, 2);
+                    ^
+      src/_geoslib.c:4605:28: warning: passing argument 1 of ‘GEOSCoordSeq_setX’ from incompatible pointer type [-Wincompatible-pointer-types]
+         (void)(GEOSCoordSeq_setX(__pyx_v_cs, 0, __pyx_v_dx));
+                                  ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1325:21: note: expected ‘GEOSCoordSequence * {aka struct GEOSCoordSeq_t *}’ but argument is of type ‘GEOSCoordSequence ** {aka struct GEOSCoordSeq_t **}’
+       extern int GEOS_DLL GEOSCoordSeq_setX(GEOSCoordSequence* s,
+                           ^~~~~~~~~~~~~~~~~
+      src/_geoslib.c:4614:28: warning: passing argument 1 of ‘GEOSCoordSeq_setY’ from incompatible pointer type [-Wincompatible-pointer-types]
+         (void)(GEOSCoordSeq_setY(__pyx_v_cs, 0, __pyx_v_dy));
+                                  ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1327:21: note: expected ‘GEOSCoordSequence * {aka struct GEOSCoordSeq_t *}’ but argument is of type ‘GEOSCoordSequence ** {aka struct GEOSCoordSeq_t **}’
+       extern int GEOS_DLL GEOSCoordSeq_setY(GEOSCoordSequence* s,
+                           ^~~~~~~~~~~~~~~~~
+      src/_geoslib.c:4623:57: warning: passing argument 1 of ‘GEOSGeom_createPoint’ from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_self->__pyx_base._geom = GEOSGeom_createPoint(__pyx_v_cs);
+                                                               ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1459:31: note: expected ‘GEOSCoordSequence * {aka struct GEOSCoordSeq_t *}’ but argument is of type ‘GEOSCoordSequence ** {aka struct GEOSCoordSeq_t **}’
+       extern GEOSGeometry GEOS_DLL *GEOSGeom_createPoint(GEOSCoordSequence* s);
+                                     ^~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:4623:34: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_v_self->__pyx_base._geom = GEOSGeom_createPoint(__pyx_v_cs);
+                                        ^
+      src/_geoslib.c: In function ‘__pyx_f_8_geoslib__get_coords’:
+      src/_geoslib.c:4886:32: warning: passing argument 1 of ‘GEOSGeomTypeId’ from incompatible pointer type [-Wincompatible-pointer-types]
+         __pyx_t_1 = ((GEOSGeomTypeId(__pyx_v_geom) == GEOS_POLYGON) != 0);
+                                      ^~~~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1864:21: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern int GEOS_DLL GEOSGeomTypeId(const GEOSGeometry* g);
+                           ^~~~~~~~~~~~~~
+      src/_geoslib.c:4896:38: warning: passing argument 1 of ‘GEOSGetExteriorRing’ from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_lr = GEOSGetExteriorRing(__pyx_v_geom);
+                                            ^~~~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1926:37: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern const GEOSGeometry GEOS_DLL *GEOSGetExteriorRing(const GEOSGeometry* g);
+                                           ^~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:4896:16: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_lr = GEOSGetExteriorRing(__pyx_v_geom);
+                      ^
+      src/_geoslib.c:4905:39: warning: passing argument 1 of ‘GEOSGeom_getCoordSeq’ from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_cs = GEOSGeom_getCoordSeq(__pyx_v_lr);
+                                             ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1935:42: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern const GEOSCoordSequence GEOS_DLL *GEOSGeom_getCoordSeq(const GEOSGeometry* g);
+                                                ^~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:4905:16: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_cs = GEOSGeom_getCoordSeq(__pyx_v_lr);
+                      ^
+      src/_geoslib.c:4925:39: warning: passing argument 1 of ‘GEOSGeom_getCoordSeq’ from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_cs = GEOSGeom_getCoordSeq(__pyx_v_geom);
+                                             ^~~~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1935:42: note: expected ‘const GEOSGeometry * {aka const struct GEOSGeom_t *}’ but argument is of type ‘GEOSGeometry ** {aka struct GEOSGeom_t **}’
+       extern const GEOSCoordSequence GEOS_DLL *GEOSGeom_getCoordSeq(const GEOSGeometry* g);
+                                                ^~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:4925:16: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+           __pyx_v_cs = GEOSGeom_getCoordSeq(__pyx_v_geom);
+                      ^
+      src/_geoslib.c:4936:31: warning: passing argument 1 of ‘GEOSCoordSeq_getSize’ from incompatible pointer type [-Wincompatible-pointer-types]
+         (void)(GEOSCoordSeq_getSize(__pyx_v_cs, (&__pyx_v_M)));
+                                     ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1350:21: note: expected ‘const GEOSCoordSequence * {aka const struct GEOSCoordSeq_t *}’ but argument is of type ‘GEOSCoordSequence ** {aka struct GEOSCoordSeq_t **}’
+       extern int GEOS_DLL GEOSCoordSeq_getSize(const GEOSCoordSequence* s,
+                           ^~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:5044:30: warning: passing argument 1 of ‘GEOSCoordSeq_getX’ from incompatible pointer type [-Wincompatible-pointer-types]
+           (void)(GEOSCoordSeq_getX(__pyx_v_cs, __pyx_v_i, (&__pyx_v_dx)));
+                                    ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1338:21: note: expected ‘const GEOSCoordSequence * {aka const struct GEOSCoordSeq_t *}’ but argument is of type ‘GEOSCoordSequence ** {aka struct GEOSCoordSeq_t **}’
+       extern int GEOS_DLL GEOSCoordSeq_getX(const GEOSCoordSequence* s,
+                           ^~~~~~~~~~~~~~~~~
+      src/_geoslib.c:5053:30: warning: passing argument 1 of ‘GEOSCoordSeq_getY’ from incompatible pointer type [-Wincompatible-pointer-types]
+           (void)(GEOSCoordSeq_getY(__pyx_v_cs, __pyx_v_i, (&__pyx_v_dy)));
+                                    ^~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1340:21: note: expected ‘const GEOSCoordSequence * {aka const struct GEOSCoordSeq_t *}’ but argument is of type ‘GEOSCoordSequence ** {aka struct GEOSCoordSeq_t **}’
+       extern int GEOS_DLL GEOSCoordSeq_getY(const GEOSCoordSequence* s,
+                           ^~~~~~~~~~~~~~~~~
+      src/_geoslib.c: In function ‘__Pyx_modinit_type_init_code’:
+      src/_geoslib.c:5678:37: error: ‘PyTypeObject {aka struct _typeobject}’ has no member named ‘tp_print’; did you mean ‘tp_dict’?
+         __pyx_type_8_geoslib_BaseGeometry.tp_print = 0;
+                                           ^~~~~~~~
+                                           tp_dict
+      src/_geoslib.c:5686:32: error: ‘PyTypeObject {aka struct _typeobject}’ has no member named ‘tp_print’; did you mean ‘tp_dict’?
+         __pyx_type_8_geoslib_Polygon.tp_print = 0;
+                                      ^~~~~~~~
+                                      tp_dict
+      src/_geoslib.c:5694:35: error: ‘PyTypeObject {aka struct _typeobject}’ has no member named ‘tp_print’; did you mean ‘tp_dict’?
+         __pyx_type_8_geoslib_LineString.tp_print = 0;
+                                         ^~~~~~~~
+                                         tp_dict
+      src/_geoslib.c:5702:30: error: ‘PyTypeObject {aka struct _typeobject}’ has no member named ‘tp_print’; did you mean ‘tp_dict’?
+         __pyx_type_8_geoslib_Point.tp_print = 0;
+                                    ^~~~~~~~
+                                    tp_dict
+      src/_geoslib.c: In function ‘PyInit__geoslib’:
+      src/_geoslib.c:5982:12: warning: passing argument 1 of ‘initGEOS’ from incompatible pointer type [-Wincompatible-pointer-types]
+         initGEOS(__pyx_f_8_geoslib_notice_h, __pyx_f_8_geoslib_error_h);
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1263:22: note: expected ‘GEOSMessageHandler {aka void (*)(const char *)}’ but argument is of type ‘void (*)(char *, char *)’
+       extern void GEOS_DLL initGEOS(GEOSMessageHandler notice_function,
+                            ^~~~~~~~
+      src/_geoslib.c:5982:40: warning: passing argument 2 of ‘initGEOS’ from incompatible pointer type [-Wincompatible-pointer-types]
+         initGEOS(__pyx_f_8_geoslib_notice_h, __pyx_f_8_geoslib_error_h);
+                                              ^~~~~~~~~~~~~~~~~~~~~~~~~
+      In file included from src/_geoslib.c:566:0:
+      /usr/include/geos_c.h:1263:22: note: expected ‘GEOSMessageHandler {aka void (*)(const char *)}’ but argument is of type ‘void (*)(char *, char *)’
+       extern void GEOS_DLL initGEOS(GEOSMessageHandler notice_function,
+                            ^~~~~~~~
+      src/_geoslib.c: In function ‘__Pyx_ParseOptionalKeywords’:
+      src/_geoslib.c:6732:21: warning: ‘_PyUnicode_get_wstr_length’ is deprecated [-Wdeprecated-declarations]
+                           (PyUnicode_GET_SIZE(**name) != PyUnicode_GET_SIZE(key)) ? 1 :
+                           ^
+      In file included from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/unicodeobject.h:1026:0,
+                       from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/Python.h:93,
+                       from src/_geoslib.c:4:
+      /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/cpython/unicodeobject.h:446:26: note: declared here
+       static inline Py_ssize_t _PyUnicode_get_wstr_length(PyObject *op) {
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:6732:21: warning: ‘PyUnicode_AsUnicode’ is deprecated [-Wdeprecated-declarations]
+                           (PyUnicode_GET_SIZE(**name) != PyUnicode_GET_SIZE(key)) ? 1 :
+                           ^
+      In file included from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/unicodeobject.h:1026:0,
+                       from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/Python.h:93,
+                       from src/_geoslib.c:4:
+      /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/cpython/unicodeobject.h:580:45: note: declared here
+       Py_DEPRECATED(3.3) PyAPI_FUNC(Py_UNICODE *) PyUnicode_AsUnicode(
+                                                   ^~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:6732:21: warning: ‘_PyUnicode_get_wstr_length’ is deprecated [-Wdeprecated-declarations]
+                           (PyUnicode_GET_SIZE(**name) != PyUnicode_GET_SIZE(key)) ? 1 :
+                           ^
+      In file included from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/unicodeobject.h:1026:0,
+                       from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/Python.h:93,
+                       from src/_geoslib.c:4:
+      /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/cpython/unicodeobject.h:446:26: note: declared here
+       static inline Py_ssize_t _PyUnicode_get_wstr_length(PyObject *op) {
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:6732:21: warning: ‘_PyUnicode_get_wstr_length’ is deprecated [-Wdeprecated-declarations]
+                           (PyUnicode_GET_SIZE(**name) != PyUnicode_GET_SIZE(key)) ? 1 :
+                           ^
+      In file included from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/unicodeobject.h:1026:0,
+                       from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/Python.h:93,
+                       from src/_geoslib.c:4:
+      /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/cpython/unicodeobject.h:446:26: note: declared here
+       static inline Py_ssize_t _PyUnicode_get_wstr_length(PyObject *op) {
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:6732:21: warning: ‘PyUnicode_AsUnicode’ is deprecated [-Wdeprecated-declarations]
+                           (PyUnicode_GET_SIZE(**name) != PyUnicode_GET_SIZE(key)) ? 1 :
+                           ^
+      In file included from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/unicodeobject.h:1026:0,
+                       from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/Python.h:93,
+                       from src/_geoslib.c:4:
+      /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/cpython/unicodeobject.h:580:45: note: declared here
+       Py_DEPRECATED(3.3) PyAPI_FUNC(Py_UNICODE *) PyUnicode_AsUnicode(
+                                                   ^~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:6732:21: warning: ‘_PyUnicode_get_wstr_length’ is deprecated [-Wdeprecated-declarations]
+                           (PyUnicode_GET_SIZE(**name) != PyUnicode_GET_SIZE(key)) ? 1 :
+                           ^
+      In file included from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/unicodeobject.h:1026:0,
+                       from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/Python.h:93,
+                       from src/_geoslib.c:4:
+      /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/cpython/unicodeobject.h:446:26: note: declared here
+       static inline Py_ssize_t _PyUnicode_get_wstr_length(PyObject *op) {
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:6748:25: warning: ‘_PyUnicode_get_wstr_length’ is deprecated [-Wdeprecated-declarations]
+                               (PyUnicode_GET_SIZE(**argname) != PyUnicode_GET_SIZE(key)) ? 1 :
+                               ^
+      In file included from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/unicodeobject.h:1026:0,
+                       from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/Python.h:93,
+                       from src/_geoslib.c:4:
+      /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/cpython/unicodeobject.h:446:26: note: declared here
+       static inline Py_ssize_t _PyUnicode_get_wstr_length(PyObject *op) {
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:6748:25: warning: ‘PyUnicode_AsUnicode’ is deprecated [-Wdeprecated-declarations]
+                               (PyUnicode_GET_SIZE(**argname) != PyUnicode_GET_SIZE(key)) ? 1 :
+                               ^
+      In file included from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/unicodeobject.h:1026:0,
+                       from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/Python.h:93,
+                       from src/_geoslib.c:4:
+      /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/cpython/unicodeobject.h:580:45: note: declared here
+       Py_DEPRECATED(3.3) PyAPI_FUNC(Py_UNICODE *) PyUnicode_AsUnicode(
+                                                   ^~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:6748:25: warning: ‘_PyUnicode_get_wstr_length’ is deprecated [-Wdeprecated-declarations]
+                               (PyUnicode_GET_SIZE(**argname) != PyUnicode_GET_SIZE(key)) ? 1 :
+                               ^
+      In file included from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/unicodeobject.h:1026:0,
+                       from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/Python.h:93,
+                       from src/_geoslib.c:4:
+      /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/cpython/unicodeobject.h:446:26: note: declared here
+       static inline Py_ssize_t _PyUnicode_get_wstr_length(PyObject *op) {
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:6748:25: warning: ‘_PyUnicode_get_wstr_length’ is deprecated [-Wdeprecated-declarations]
+                               (PyUnicode_GET_SIZE(**argname) != PyUnicode_GET_SIZE(key)) ? 1 :
+                               ^
+      In file included from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/unicodeobject.h:1026:0,
+                       from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/Python.h:93,
+                       from src/_geoslib.c:4:
+      /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/cpython/unicodeobject.h:446:26: note: declared here
+       static inline Py_ssize_t _PyUnicode_get_wstr_length(PyObject *op) {
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:6748:25: warning: ‘PyUnicode_AsUnicode’ is deprecated [-Wdeprecated-declarations]
+                               (PyUnicode_GET_SIZE(**argname) != PyUnicode_GET_SIZE(key)) ? 1 :
+                               ^
+      In file included from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/unicodeobject.h:1026:0,
+                       from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/Python.h:93,
+                       from src/_geoslib.c:4:
+      /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/cpython/unicodeobject.h:580:45: note: declared here
+       Py_DEPRECATED(3.3) PyAPI_FUNC(Py_UNICODE *) PyUnicode_AsUnicode(
+                                                   ^~~~~~~~~~~~~~~~~~~
+      src/_geoslib.c:6748:25: warning: ‘_PyUnicode_get_wstr_length’ is deprecated [-Wdeprecated-declarations]
+                               (PyUnicode_GET_SIZE(**argname) != PyUnicode_GET_SIZE(key)) ? 1 :
+                               ^
+      In file included from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/unicodeobject.h:1026:0,
+                       from /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/Python.h:93,
+                       from src/_geoslib.c:4:
+      /home/doc_ayush/mambaforge/envs/fermi/include/python3.9/cpython/unicodeobject.h:446:26: note: declared here
+       static inline Py_ssize_t _PyUnicode_get_wstr_length(PyObject *op) {
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      error: Command "gcc -pthread -B /home/doc_ayush/mambaforge/envs/fermi/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -O2 -isystem /home/doc_ayush/mambaforge/envs/fermi/include -fPIC -I/home/doc_ayush/.geos_dir/include -I/home/doc_ayush/gbm/lib/python3.9/site-packages/numpy/core/include -I/home/doc_ayush/gbm/lib/python3.9/site-packages/numpy/core/include -Ibuild/src.linux-x86_64-3.9/numpy/distutils/include -I/home/doc_ayush/gbm/include -I/home/doc_ayush/mambaforge/envs/fermi/include/python3.9 -c src/_geoslib.c -o build/temp.linux-x86_64-3.9/src/_geoslib.o -MMD -MF build/temp.linux-x86_64-3.9/src/_geoslib.o.d -msse -msse2 -msse3" failed with exit status 1
+      INFO:
+      ########### EXT COMPILER OPTIMIZATION ###########
+      INFO: Platform      :
+        Architecture: x64
+        Compiler    : gcc
+      
+      CPU baseline  :
+        Requested   : 'min'
+        Enabled     : SSE SSE2 SSE3
+        Flags       : -msse -msse2 -msse3
+        Extra checks: none
+      
+      CPU dispatch  :
+        Requested   : 'max -xop -fma4'
+        Enabled     : SSSE3 SSE41 POPCNT SSE42 AVX F16C FMA3 AVX2 AVX512F AVX512CD AVX512_KNL AVX512_KNM AVX512_SKX AVX512_CNL
+        Generated   : none
+      INFO: CCompilerOpt.cache_flush[857] : write cache to path -> /tmp/pip-install-11sg8ro2/basemap_054e458c231945ff9c08f8e039fb97f6/build/temp.linux-x86_64-3.9/ccompiler_opt_cache_ext.py
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  Rolling back uninstall of basemap
+  Moving to /home/doc_ayush/gbm/lib/python3.9/site-packages/_geoslib.cpython-39-x86_64-linux-gnu.so
+   from /tmp/pip-uninstall-ezmn0jyh/_geoslib.cpython-39-x86_64-linux-gnu.so
+  Moving to /home/doc_ayush/gbm/lib/python3.9/site-packages/basemap-1.3.4-py3.9-nspkg.pth
+   from /tmp/pip-uninstall-ezmn0jyh/basemap-1.3.4-py3.9-nspkg.pth
+  Moving to /home/doc_ayush/gbm/lib/python3.9/site-packages/basemap-1.3.4.dist-info/
+   from /home/doc_ayush/gbm/lib/python3.9/site-packages/~asemap-1.3.4.dist-info
+  Moving to /home/doc_ayush/gbm/lib/python3.9/site-packages/basemap.libs/
+   from /home/doc_ayush/gbm/lib/python3.9/site-packages/~asemap.libs
+  Moving to /home/doc_ayush/gbm/lib/python3.9/site-packages/mpl_toolkits/basemap/
+   from /home/doc_ayush/gbm/lib/python3.9/site-packages/mpl_toolkits/~asemap
+error: legacy-install-failure
+
+× Encountered error while trying to install package.
+╰─> basemap
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for output from the failure.
+(gbm) doc_ayush@astro-A320M-S2H:~$ 
+

@@ -1,0 +1,26 @@
+doc_ayush@astro-A320M-S2H:~$ pip3 install gbm_data_tools-1.1.1.tar[basemap]
+Processing ./gbm_data_tools-1.1.1.tar
+Collecting astropy>=3.1 (from gbm-data-tools==1.1.1)
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/74/9c/a1e51955d4a2af497a507c323409ebe55c122a91c438d2884d918360efc1/astropy-4.1-cp36-cp36m-manylinux1_x86_64.whl (10.3MB)
+    100% |████████████████████████████████| 10.3MB 144kB/s 
+Collecting healpy>=1.12.4 (from gbm-data-tools==1.1.1)
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/dc/5d/670a661353609daca6ce828c404c450152564db93652004b5d4196920177/healpy-1.15.0-cp36-cp36m-manylinux_2_5_x86_64.manylinux1_x86_64.whl (18.1MB)
+    100% |████████████████████████████████| 18.1MB 86kB/s 
+Collecting matplotlib<=3.2.1,>=2.2.3 (from gbm-data-tools==1.1.1)
+  Downloading https://files.pythonhosted.org/packages/93/4b/52da6b1523d5139d04e02d9e26ceda6146b48f2a4e5d2abfdf1c7bac8c40/matplotlib-3.2.1-cp36-cp36m-manylinux1_x86_64.whl (12.4MB)
+    100% |████████████████████████████████| 12.4MB 140kB/s 
+Collecting numpy>=1.17.3 (from gbm-data-tools==1.1.1)
+  Downloading https://files.pythonhosted.org/packages/45/b2/6c7545bb7a38754d63048c7696804a0d947328125d81bf12beaa692c3ae3/numpy-1.19.5-cp36-cp36m-manylinux1_x86_64.whl (13.4MB)
+    100% |████████████████████████████████| 13.4MB 124kB/s 
+Collecting pyproj>=1.9.6 (from gbm-data-tools==1.1.1)
+  Downloading https://files.pythonhosted.org/packages/2c/12/7a8cca32506747c05ffd5c6ba556cf8435754af0939906cbcc7fa5802ea3/pyproj-3.0.1.tar.gz (168kB)
+    100% |████████████████████████████████| 174kB 749kB/s 
+    Complete output from command python setup.py egg_info:
+    ERROR: Cython.Build.cythonize not found. Cython is required to build pyproj.
+    
+    ----------------------------------------
+Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-build-ex6hmsgp/pyproj/
+doc_ayush@astro-A320M-S2H:~$ 
+

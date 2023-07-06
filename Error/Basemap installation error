@@ -1,0 +1,821 @@
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ sudo apt-get install pylint
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+pylint is already the newest version (2.12.2-1).
+pylint set to manually installed.
+The following packages were automatically installed and are no longer required:
+  libflashrom1 libftdi1-2 libllvm13
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 13 not upgraded.
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ cd basemap-1.3.6/
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6$ cd packages/basemap_data
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/packages/basemap_data$ python setup.py
+Command 'python' not found, did you mean:
+  command 'python3' from deb python3
+  command 'python' from deb python-is-python3
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/packages/basemap_data$ python install setup.py
+Command 'python' not found, did you mean:
+  command 'python3' from deb python3
+  command 'python' from deb python-is-python3
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/packages/basemap_data$ python3 install setup.py
+python3: can't open file '/home/ubuntu/basemap-1.3.6/packages/basemap_data/install': [Errno 2] No such file or directory
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/packages/basemap_data$ python -m pip install basemap-data
+Command 'python' not found, did you mean:
+  command 'python3' from deb python3
+  command 'python' from deb python-is-python3
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/packages/basemap_data$ sudo apt-get install python
+[sudo] password for ubuntu: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Package python is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+However the following packages replace it:
+  2to3 python2-minimal:i386 python2:i386 python2-minimal python2 dh-python
+  python-is-python3
+
+E: Package 'python' has no installation candidate
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/packages/basemap_data$ python3 -m pip install basemap-data
+Defaulting to user installation because normal site-packages is not writeable
+Collecting basemap-data
+  Using cached basemap_data-1.3.2-py2.py3-none-any.whl (30.5 MB)
+Installing collected packages: basemap-data
+Successfully installed basemap-data-1.3.2
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/packages/basemap_data$ cd -
+/home/ubuntu/basemap-1.3.6
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6$ ls
+CHANGELOG.md  examples  FAQ  geos-3.11.1  LICENSE  packages  README.md
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6$ cd packages/
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/packages$ ls
+basemap  basemap_data  basemap_data_hires
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/packages$ cd basemap_data_hires/
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/packages/basemap_data_hires$ ls
+COPYING  COPYING.LESSER  README.md  setup.cfg  setup.py  src
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/packages/basemap_data_hires$ python -m pip install basemap-data-hires
+Command 'python' not found, did you mean:
+  command 'python3' from deb python3
+  command 'python' from deb python-is-python3
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/packages/basemap_data_hires$ python -m pip install basemap-data-hires
+Command 'python' not found, did you mean:
+  command 'python3' from deb python3
+  command 'python' from deb python-is-python3
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/packages/basemap_data_hires$ python3 -m pip install basemap-data-hires
+Defaulting to user installation because normal site-packages is not writeable
+Collecting basemap-data-hires
+  Using cached basemap_data_hires-1.3.2-py2.py3-none-any.whl (91.1 MB)
+Installing collected packages: basemap-data-hires
+Successfully installed basemap-data-hires-1.3.2
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/packages/basemap_data_hires$ cd -
+/home/ubuntu/basemap-1.3.6/packages
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/packages$ cd basemap
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/packages/basemap$ python3 -m pip install basemap-data
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: basemap-data in /home/ubuntu/.local/lib/python3.10/site-packages (1.3.2)
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/packages/basemap$ python3 -m pip install basemap-data-hires
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: basemap-data-hires in /home/ubuntu/.local/lib/python3.10/site-packages (1.3.2)
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/packages/basemap$ python3 -m pip install basemap
+Defaulting to user installation because normal site-packages is not writeable
+Collecting basemap
+  Downloading basemap-1.3.6-cp310-cp310-manylinux1_x86_64.whl (859 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 859.2/859.2 kB 294.9 kB/s eta 0:00:00
+Requirement already satisfied: pyshp<2.4,>=1.2 in /usr/lib/python3/dist-packages (from basemap) (2.2.0)
+Requirement already satisfied: matplotlib<3.7,>=1.5 in /usr/lib/python3/dist-packages (from basemap) (3.5.1)
+Collecting numpy<1.24,>=1.22
+  Downloading numpy-1.23.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.1/17.1 MB 284.2 kB/s eta 0:00:00
+Requirement already satisfied: basemap-data<1.4,>=1.3.2 in /home/ubuntu/.local/lib/python3.10/site-packages (from basemap) (1.3.2)
+Requirement already satisfied: pyproj<3.5.0,>=1.9.3 in /usr/lib/python3/dist-packages (from basemap) (3.3.0)
+Installing collected packages: numpy, basemap
+Successfully installed basemap-1.3.6 numpy-1.23.5
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/packages/basemap$ 
+
+*********************************************
+*********************************************
+
+ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda activate gbm
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda install unittest2
+Collecting package metadata (current_repodata.json): done
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): done
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: - 
+Found conflicts! Looking for incompatible packages.
+This can take several minutes.  Press CTRL-C to abort.
+failed                                                                          
+
+UnsatisfiableError: The following specifications were found
+to be incompatible with the existing python installation in your environment:
+
+Specifications:
+
+  - unittest2 -> python[version='<3|>=3.8,<3.9.0a0|>=3.6,<3.7.0a0|>=3.7,<3.8.0a0|>=2.7,<2.8.0a0|>=3.5,<3.6.0a0']
+
+Your python: python=3.11
+
+If python is on the left-most side of the chain, that's the version you've asked for.
+When python appears to the right, that indicates that the thing on the left is somehow
+not available for the python version you are constrained to. Note that conda will not
+change your python version to a different minor version unless you explicitly specify
+that.
+
+The following specifications were found to be incompatible with your system:
+
+  - feature:/linux-64::__glibc==2.35=0
+  - python=3.11 -> libgcc-ng[version='>=11.2.0'] -> __glibc[version='>=2.17']
+
+Your installed version is: 2.35
+
+
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda install astroid
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+# All requested packages already installed.
+
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda install pylint
+Collecting package metadata (current_repodata.json): done
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/ubuntu/anaconda3/envs/gbm
+
+  added / updated specs:
+    - pylint
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    astroid-2.13.4             |  py311h38be061_0         491 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:         491 KB
+
+The following NEW packages will be INSTALLED:
+
+  dill               conda-forge/noarch::dill-0.3.6-pyhd8ed1ab_1 
+  isort              conda-forge/noarch::isort-5.12.0-pyhd8ed1ab_1 
+  pylint             conda-forge/noarch::pylint-2.15.10-pyhd8ed1ab_0 
+  tomlkit            conda-forge/noarch::tomlkit-0.11.6-pyha770c72_0 
+
+The following packages will be DOWNGRADED:
+
+  astroid                            2.14.0-py311h38be061_0 --> 2.13.4-py311h38be061_0 
+
+
+
+Downloading and Extracting Packages
+                                                                                
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda install flake8
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+# All requested packages already installed.
+
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda install sphinx
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/ubuntu/anaconda3/envs/gbm
+
+  added / updated specs:
+    - sphinx
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    alabaster-0.7.13           |     pyhd8ed1ab_0          18 KB  conda-forge
+    docutils-0.19              |  py311h38be061_1         955 KB  conda-forge
+    imagesize-1.4.1            |     pyhd8ed1ab_0          10 KB  conda-forge
+    snowballstemmer-2.2.0      |     pyhd8ed1ab_0          57 KB  conda-forge
+    sphinx-6.1.3               |     pyhd8ed1ab_0         1.2 MB  conda-forge
+    sphinxcontrib-applehelp-1.0.4|     pyhd8ed1ab_0          29 KB  conda-forge
+    sphinxcontrib-devhelp-1.0.2|             py_0          22 KB  conda-forge
+    sphinxcontrib-htmlhelp-2.0.1|     pyhd8ed1ab_0          32 KB  conda-forge
+    sphinxcontrib-jsmath-1.0.1 |             py_0           7 KB  conda-forge
+    sphinxcontrib-qthelp-1.0.3 |             py_0          25 KB  conda-forge
+    sphinxcontrib-serializinghtml-1.1.5|     pyhd8ed1ab_2          27 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:         2.3 MB
+
+The following NEW packages will be INSTALLED:
+
+  alabaster          conda-forge/noarch::alabaster-0.7.13-pyhd8ed1ab_0 
+  docutils           conda-forge/linux-64::docutils-0.19-py311h38be061_1 
+  imagesize          conda-forge/noarch::imagesize-1.4.1-pyhd8ed1ab_0 
+  snowballstemmer    conda-forge/noarch::snowballstemmer-2.2.0-pyhd8ed1ab_0 
+  sphinx             conda-forge/noarch::sphinx-6.1.3-pyhd8ed1ab_0 
+  sphinxcontrib-app~ conda-forge/noarch::sphinxcontrib-applehelp-1.0.4-pyhd8ed1ab_0 
+  sphinxcontrib-dev~ conda-forge/noarch::sphinxcontrib-devhelp-1.0.2-py_0 
+  sphinxcontrib-htm~ conda-forge/noarch::sphinxcontrib-htmlhelp-2.0.1-pyhd8ed1ab_0 
+  sphinxcontrib-jsm~ conda-forge/noarch::sphinxcontrib-jsmath-1.0.1-py_0 
+  sphinxcontrib-qth~ conda-forge/noarch::sphinxcontrib-qthelp-1.0.3-py_0 
+  sphinxcontrib-ser~ conda-forge/noarch::sphinxcontrib-serializinghtml-1.1.5-pyhd8ed1ab_2 
+
+
+
+Downloading and Extracting Packages
+                                                                                
+Preparing transaction: done                                                     
+Verifying transaction: done                                                     
+Executing transaction: done                                                     
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda install basemap_data                                                                         
+Collecting package metadata (current_repodata.json): done                       
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.                                                                            
+Collecting package metadata (repodata.json): done                               
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+
+PackagesNotFoundError: The following packages are not available from current channels:
+
+  - basemap_data
+
+Current channels:
+
+  - https://conda.anaconda.org/xspecmodels/linux-64
+  - https://conda.anaconda.org/xspecmodels/noarch
+  - https://conda.anaconda.org/threeml/linux-64
+  - https://conda.anaconda.org/threeml/noarch
+  - https://conda.anaconda.org/conda-forge/linux-64
+  - https://conda.anaconda.org/conda-forge/noarch
+  - https://repo.anaconda.com/pkgs/main/linux-64
+  - https://repo.anaconda.com/pkgs/main/noarch
+  - https://repo.anaconda.com/pkgs/r/linux-64
+  - https://repo.anaconda.com/pkgs/r/noarch
+
+To search for alternate channels that may provide the conda package you're
+looking for, navigate to
+
+    https://anaconda.org
+
+and use the search bar at the top of the page.
+
+
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda install -c conda-forge basemap_data
+Collecting package metadata (current_repodata.json): done
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+Collecting package metadata (repodata.json): done
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+
+PackagesNotFoundError: The following packages are not available from current channels:
+
+  - basemap_data
+
+Current channels:
+
+  - https://conda.anaconda.org/conda-forge/linux-64
+  - https://conda.anaconda.org/conda-forge/noarch
+  - https://conda.anaconda.org/xspecmodels/linux-64
+  - https://conda.anaconda.org/xspecmodels/noarch
+  - https://conda.anaconda.org/threeml/linux-64
+  - https://conda.anaconda.org/threeml/noarch
+  - https://repo.anaconda.com/pkgs/main/linux-64
+  - https://repo.anaconda.com/pkgs/main/noarch
+  - https://repo.anaconda.com/pkgs/r/linux-64
+  - https://repo.anaconda.com/pkgs/r/noarch
+
+To search for alternate channels that may provide the conda package you're
+looking for, navigate to
+
+    https://anaconda.org
+
+and use the search bar at the top of the page.
+
+
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda install cycler
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+# All requested packages already installed.
+
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda install numpy
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+# All requested packages already installed.
+
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda install pyparsing
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+# All requested packages already installed.
+
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda install matplotlib
+Collecting package metadata (current_repodata.json): done
+Solving environment: \ /done
+da
+# All requested packages already installed.
+
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda install pyproj
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/ubuntu/anaconda3/envs/gbm
+
+  added / updated specs:
+    - pyproj
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    pyproj-3.4.1               |  py311h945b3ca_1         457 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:         457 KB
+
+The following NEW packages will be INSTALLED:
+
+  pyproj             conda-forge/linux-64::pyproj-3.4.1-py311h945b3ca_1 
+
+
+
+Downloading and Extracting Packages
+                                                                                
+
+[Errno 2] No such file or directory: '/home/ubuntu/anaconda3/pkgs/pyproj-3.4.1-py311h945b3ca_1.conda'
+
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda install pyshp
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/ubuntu/anaconda3/envs/gbm
+
+  added / updated specs:
+    - pyshp
+
+
+The following NEW packages will be INSTALLED:
+
+  pyshp              conda-forge/noarch::pyshp-2.3.1-pyhd8ed1ab_0 
+
+
+
+Downloading and Extracting Packages
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda install -c conda-forge basemap-data-hires
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/ubuntu/anaconda3/envs/gbm
+
+  added / updated specs:
+    - basemap-data-hires
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    basemap-data-1.3.2         |     pyhd8ed1ab_1        27.2 MB  conda-forge
+    basemap-data-hires-1.3.2   |     pyhd8ed1ab_1        93.3 MB  conda-forge
+    ------------------------------------------------------------
+                                           Total:       120.5 MB
+
+The following NEW packages will be INSTALLED:
+
+  basemap-data       conda-forge/noarch::basemap-data-1.3.2-pyhd8ed1ab_1 
+  basemap-data-hires conda-forge/noarch::basemap-data-hires-1.3.2-pyhd8ed1ab_1 
+
+The following packages will be UPDATED:
+
+  ca-certificates    anaconda::ca-certificates-2022.07.19-~ --> conda-forge::ca-certificates-2022.12.7-ha878542_0 
+  certifi            anaconda::certifi-2020.6.20-pyhd3eb1b~ --> conda-forge::certifi-2022.12.7-pyhd8ed1ab_0 
+
+
+
+Downloading and Extracting Packages
+                                                                                
+Preparing transaction: done                                                     
+Verifying transaction: done
+Executing transaction: done
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda install owslib
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/ubuntu/anaconda3/envs/gbm
+
+  added / updated specs:
+    - owslib
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    owslib-0.27.2              |     pyhd8ed1ab_1         137 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:         137 KB
+
+The following NEW packages will be INSTALLED:
+
+  owslib             conda-forge/noarch::owslib-0.27.2-pyhd8ed1ab_1 
+
+
+
+Downloading and Extracting Packages
+                                                                                
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ conda install basemap
+Collecting package metadata (current_repodata.json): done
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): done
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: | 
+Found conflicts! Looking for incompatible packages.
+This can take several minutes.  Press CTRL-C to abort.
+failed                                                                          
+
+UnsatisfiableError: The following specifications were found
+to be incompatible with the existing python installation in your environment:
+
+Specifications:
+
+  - basemap -> python[version='>=2.7,<2.8.0a0|>=3.10,<3.11.0a0|>=3.8,<3.9.0a0|>=3.9,<3.10.0a0|>=3.7,<3.8.0a0|>=3.6,<3.7.0a0']
+
+Your python: python=3.11
+
+If python is on the left-most side of the chain, that's the version you've asked for.
+When python appears to the right, that indicates that the thing on the left is somehow
+not available for the python version you are constrained to. Note that conda will not
+change your python version to a different minor version unless you explicitly specify
+that.
+
+The following specifications were found to be incompatible with your system:
+
+  - feature:/linux-64::__glibc==2.35=0
+  - basemap -> libgcc-ng[version='>=10.3.0'] -> __glibc[version='>=2.17']
+  - python=3.11 -> libgcc-ng[version='>=11.2.0'] -> __glibc[version='>=2.17']
+
+Your installed version is: 2.35
+
+
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ python -m pip install basemap-data
+Requirement already satisfied: basemap-data in ./anaconda3/envs/gbm/lib/python3.11/site-packages (1.3.2)
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ python -m pip install basemap-data-hires
+Requirement already satisfied: basemap-data-hires in ./anaconda3/envs/gbm/lib/python3.11/site-packages (1.3.2)
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ python -m pip install basemap
+Collecting basemap
+  Downloading basemap-1.3.6-cp311-cp311-manylinux1_x86_64.whl (860 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 860.3/860.3 kB 214.6 kB/s eta 0:00:00
+Requirement already satisfied: basemap-data<1.4,>=1.3.2 in ./anaconda3/envs/gbm/lib/python3.11/site-packages (from basemap) (1.3.2)
+Requirement already satisfied: pyshp<2.4,>=1.2 in ./anaconda3/envs/gbm/lib/python3.11/site-packages (from basemap) (2.3.1)
+Requirement already satisfied: matplotlib<3.7,>=1.5 in ./anaconda3/envs/gbm/lib/python3.11/site-packages (from basemap) (3.6.3)
+Collecting pyproj<3.5.0,>=1.9.3
+  Downloading pyproj-3.4.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (7.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.8/7.8 MB 294.7 kB/s eta 0:00:00
+Collecting numpy<1.24,>=1.22
+  Downloading numpy-1.23.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.1/17.1 MB 719.7 kB/s eta 0:00:00
+Requirement already satisfied: contourpy>=1.0.1 in ./anaconda3/envs/gbm/lib/python3.11/site-packages (from matplotlib<3.7,>=1.5->basemap) (1.0.7)
+Requirement already satisfied: cycler>=0.10 in ./anaconda3/envs/gbm/lib/python3.11/site-packages (from matplotlib<3.7,>=1.5->basemap) (0.11.0)
+Requirement already satisfied: fonttools>=4.22.0 in ./anaconda3/envs/gbm/lib/python3.11/site-packages (from matplotlib<3.7,>=1.5->basemap) (4.38.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in ./anaconda3/envs/gbm/lib/python3.11/site-packages (from matplotlib<3.7,>=1.5->basemap) (1.4.4)
+Requirement already satisfied: packaging>=20.0 in ./anaconda3/envs/gbm/lib/python3.11/site-packages (from matplotlib<3.7,>=1.5->basemap) (23.0)
+Requirement already satisfied: pillow>=6.2.0 in ./anaconda3/envs/gbm/lib/python3.11/site-packages (from matplotlib<3.7,>=1.5->basemap) (9.4.0)
+Requirement already satisfied: pyparsing>=2.2.1 in ./anaconda3/envs/gbm/lib/python3.11/site-packages (from matplotlib<3.7,>=1.5->basemap) (3.0.9)
+Requirement already satisfied: python-dateutil>=2.7 in ./anaconda3/envs/gbm/lib/python3.11/site-packages (from matplotlib<3.7,>=1.5->basemap) (2.8.2)
+Requirement already satisfied: certifi in ./anaconda3/envs/gbm/lib/python3.11/site-packages (from pyproj<3.5.0,>=1.9.3->basemap) (2022.12.7)
+Requirement already satisfied: six>=1.5 in ./anaconda3/envs/gbm/lib/python3.11/site-packages (from python-dateutil>=2.7->matplotlib<3.7,>=1.5->basemap) (1.16.0)
+Installing collected packages: pyproj, numpy, basemap
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.24.1
+    Uninstalling numpy-1.24.1:
+      Successfully uninstalled numpy-1.24.1
+Successfully installed basemap-1.3.6 numpy-1.23.5 pyproj-3.4.1
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ python
+Python 3.11.0 | packaged by conda-forge | (main, Jan 14 2023, 12:27:40) [GCC 11.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from mpl_toolkits.basemap import Basemap
+>>> exit()
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~$ cd basemap-1.3.6/
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6$ cd examples/
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/examples$ python simpletest.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/examples$ python run_all.py
+**********************************************
+Running save_background.py
+images saved in figure1.png and figure2.png
+**********************************************
+Running quiver_demo.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running plotcities.py
+Traceback (most recent call last):
+  File "/home/ubuntu/basemap-1.3.6/examples/plotcities.py", line 3, in <module>
+    from matplotlib.mlab import prctile_rank
+ImportError: cannot import name 'prctile_rank' from 'matplotlib.mlab' (/home/ubuntu/anaconda3/envs/gbm/lib/python3.11/site-packages/matplotlib/mlab.py)
+TEST FAILURE (status=1)
+**********************************************
+Running daynight.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running counties.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running polarmaps.py
+min/max etopo20 data:
+-9026.625 6228.8125
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+plotting North Polar Lambert Azimuthal Equal Area basemap ...
+plotting North Polar Stereographic basemap ...
+plotting North Polar Azimuthal Equidistant basemap ...
+plotting North Polar Orthographic basemap ...
+plotting South Polar Lambert Azimuthal Equal Area basemap ...
+plotting South Polar Stereographic basemap ...
+plotting South Polar Azimuthal Equidistant basemap ...
+plotting South Polar Orthographic basemap ...
+**********************************************
+Running shiftdata.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running testarcgis.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+/home/ubuntu/anaconda3/envs/gbm/lib/python3.11/site-packages/pyproj/crs/crs.py:141: FutureWarning: '+init=<authority>:<code>' syntax is deprecated. '<authority>:<code>' is the preferred initialization method. When making the change, be mindful of axis order changes: https://pyproj4.github.io/pyproj/stable/gotchas.html#axis-order-changes-in-proj-6
+  in_crs_string = _prepare_from_proj_string(in_crs_string)
+http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-90.0,29.999999999999996,-59.99999999999999,59.99999999999999&bboxSR=4326&imageSR=4326&size=400,400&dpi=96&format=png32&transparent=true&f=image
+/home/ubuntu/anaconda3/envs/gbm/lib/python3.11/site-packages/pyproj/crs/crs.py:141: FutureWarning: '+init=<authority>:<code>' syntax is deprecated. '<authority>:<code>' is the preferred initialization method. When making the change, be mindful of axis order changes: https://pyproj4.github.io/pyproj/stable/gotchas.html#axis-order-changes-in-proj-6
+  in_crs_string = _prepare_from_proj_string(in_crs_string)
+/home/ubuntu/anaconda3/envs/gbm/lib/python3.11/site-packages/pyproj/crs/crs.py:141: FutureWarning: '+init=<authority>:<code>' syntax is deprecated. '<authority>:<code>' is the preferred initialization method. When making the change, be mindful of axis order changes: https://pyproj4.github.io/pyproj/stable/gotchas.html#axis-order-changes-in-proj-6
+  in_crs_string = _prepare_from_proj_string(in_crs_string)
+https://gis.ngdc.noaa.gov/arcgis/rest/services/etopo1/MapServer/export?bbox=1.3091159392691536e-05,-656166.6663322734,1968499.9999858893,656166.667008225&bboxSR=2263&imageSR=2263&size=400,266&dpi=96&format=png32&transparent=true&f=image
+/home/ubuntu/anaconda3/envs/gbm/lib/python3.11/site-packages/pyproj/crs/crs.py:141: FutureWarning: '+init=<authority>:<code>' syntax is deprecated. '<authority>:<code>' is the preferred initialization method. When making the change, be mindful of axis order changes: https://pyproj4.github.io/pyproj/stable/gotchas.html#axis-order-changes-in-proj-6
+  in_crs_string = _prepare_from_proj_string(in_crs_string)
+http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/export?bbox=298249.3402860793,412.5681845383955,872634.8110472572,897312.4340202268&bboxSR=3086&imageSR=3086&size=600,936&dpi=96&format=png32&transparent=true&f=image
+**********************************************
+Running hexbin_demo.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running customticks.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running nytolondon.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+plotting Great Circle from New York to London (Mercator)
+plotting Great Circle from New York to London (Gnomonic)
+**********************************************
+Running plotprecip.py
+-0.01 237.67000000000002
+[23.476933 20.741228 45.439083 51.615555]
+[-118.67131042480469 -82.3469009399414 -64.52022552490234
+ -131.4470977783203]
+24-Hour Rainfall for period ending 2006122212Z
+(813, 1051)
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running contour_demo.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+plotting with sinusoidal basemap ...
+plotting with mollweide basemap ...
+plotting with robinson basemap ...
+plotting with azimuthal equidistant basemap ...
+plotting with orthographic basemap ..
+**********************************************
+Running simpletest.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running plotmap_shaded.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running nsper_demo.py
+enter reference longitude (lon_0):75.86
+enter reference latitude (lat_0):22.72
+enter altitude of camera in km (h):3000
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running plotmap_oo.py
+image saved in plotmap.png
+**********************************************
+Running setwh.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running hires.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+Traceback (most recent call last):
+  File "/home/ubuntu/basemap-1.3.6/examples/hires.py", line 12, in <module>
+    t1 = time.clock()
+         ^^^^^^^^^^
+AttributeError: module 'time' has no attribute 'clock'
+TEST FAILURE (status=1)
+**********************************************
+Running allskymap_cr_example.py
+Parsed data for 27 UHE CRs...
+Parsed data for 18 candidate sources...
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+/home/ubuntu/basemap-1.3.6/examples/allskymap_cr_example.py:206: UserWarning: You passed a edgecolor/edgecolors ('k') for an unfilled marker ('+').  Matplotlib is ignoring the edgecolor in favor of the facecolor.  This behavior may change in the future.
+  cand_pts = m.scatter(x, y, marker='+', linewidths=.5,
+**********************************************
+Running test.py
+min/max etopo20 data:
+-9026.625 6228.8125
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+plotting Cylindrical Equidistant example ...
++proj=eqc +a=6378137.0 +b=6356752.314245179 +units=m +lon_0=0.0 
+Traceback (most recent call last):
+  File "/home/ubuntu/basemap-1.3.6/examples/test.py", line 49, in <module>
+    im = m.pcolormesh(lons,lats,topodat,cmap=cmap,latlon=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/anaconda3/envs/gbm/lib/python3.11/site-packages/mpl_toolkits/basemap/__init__.py", line 549, in with_transform
+    return plotfunc(self,x,y,data,*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/anaconda3/envs/gbm/lib/python3.11/site-packages/mpl_toolkits/basemap/__init__.py", line 3458, in pcolormesh
+    ret =  ax.pcolormesh(x,y,data,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/anaconda3/envs/gbm/lib/python3.11/site-packages/matplotlib/__init__.py", line 1433, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/anaconda3/envs/gbm/lib/python3.11/site-packages/matplotlib/axes/_axes.py", line 6169, in pcolormesh
+    X, Y, C, shading = self._pcolorargs('pcolormesh', *args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/anaconda3/envs/gbm/lib/python3.11/site-packages/matplotlib/axes/_axes.py", line 5662, in _pcolorargs
+    raise ValueError(
+ValueError: x and y arguments to pcolormesh cannot have non-finite values or be of type numpy.ma.core.MaskedArray with masked values
+TEST FAILURE (status=1)
+**********************************************
+Running geos_demo.py
+enter reference longitude (lon_0):75.8577
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running panelplot.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running wiki_example.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+**********************************************
+Running warpimage.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+warp to orthographic map ...
+warp to McBryde-Thomas Flat-Polar Quartic map ...
+Traceback (most recent call last):
+  File "/home/ubuntu/basemap-1.3.6/examples/warpimage.py", line 42, in <module>
+    m.bluemarble(scale=0.5)
+  File "/home/ubuntu/anaconda3/envs/gbm/lib/python3.11/site-packages/mpl_toolkits/basemap/__init__.py", line 3996, in bluemarble
+    return self.warpimage(image='bluemarble',scale=scale,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/anaconda3/envs/gbm/lib/python3.11/site-packages/mpl_toolkits/basemap/__init__.py", line 4164, in warpimage
+    self.transform_scalar(self._bm_rgba[:,:,k],\
+  File "/home/ubuntu/anaconda3/envs/gbm/lib/python3.11/site-packages/mpl_toolkits/basemap/__init__.py", line 2991, in transform_scalar
+    datout = interp(datin,lons,lats,lonsout,latsout,checkbounds=checkbounds,order=order,masked=masked)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/anaconda3/envs/gbm/lib/python3.11/site-packages/mpl_toolkits/basemap/__init__.py", line 5019, in interp
+    dataout = (1.-delx)*(1.-dely)*datain[yi,xi] + \
+                                  ~~~~~~^^^^^^^
+IndexError: index -2147483648 is out of bounds for axis 0 with size 1350
+TEST FAILURE (status=1)
+**********************************************
+Running plotozone.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+Traceback (most recent call last):
+  File "/home/ubuntu/basemap-1.3.6/examples/plotozone.py", line 69, in <module>
+    ptch = m.pcolor(X, Y, toplot, cmap = WhGrYlBu, norm = plt.matplotlib.colors.BoundaryNorm(bounds, 20), vmin = bounds[0], vmax = bounds[-1])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/anaconda3/envs/gbm/lib/python3.11/site-packages/mpl_toolkits/basemap/__init__.py", line 549, in with_transform
+    return plotfunc(self,x,y,data,*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/anaconda3/envs/gbm/lib/python3.11/site-packages/mpl_toolkits/basemap/__init__.py", line 3398, in pcolor
+    ret = ax.pcolor(x,y,data,**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/anaconda3/envs/gbm/lib/python3.11/site-packages/matplotlib/__init__.py", line 1433, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/anaconda3/envs/gbm/lib/python3.11/site-packages/matplotlib/axes/_axes.py", line 5956, in pcolor
+    collection._scale_norm(norm, vmin, vmax)
+  File "/home/ubuntu/anaconda3/envs/gbm/lib/python3.11/site-packages/matplotlib/cm.py", line 436, in _scale_norm
+    raise ValueError(
+ValueError: Passing a Normalize instance simultaneously with vmin/vmax is not supported.  Please pass vmin/vmax directly to the norm when creating it.
+TEST FAILURE (status=1)
+**********************************************
+Running utmtest.py
+utm coordinates from pyproj:  572105.8360444166 2867022.437649822
+utm coordinates from Basemap: 572105.8360444165 2867022.437649822
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running barb_demo.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running plot_tissot.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+Tissot Diagram: projection = cyl
+Tissot Diagram: projection = mill
+Warning: Cannot label parallels on Orthographic basemap'Warning: Cannot label meridians on full-disk
+Geostationary, Orthographic or Azimuthal equidistant basemapTissot Diagram: projection = ortho
+Tissot Diagram: projection = merc
+Tissot Diagram: projection = npstere
+Tissot Diagram: projection = nplaea
+Warning: Cannot label meridians on Mollweide basemapTissot Diagram: projection = moll
+Tissot Diagram: projection = robin
+Warning: Cannot label meridians on Hammer basemapTissot Diagram: projection = hammer
+Tissot Diagram: projection = mbtfpq
+Tissot Diagram: projection = eck4
+Tissot Diagram: projection = kav7
+Tissot Diagram: projection = npaeqd
+**********************************************
+Running cubed_sphere.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+**********************************************
+Running fillstates.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running geos_demo_3.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running ploticos.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running randompoints.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running plotmap.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running simpletest_oo.py
+image saved in simpletest.png
+**********************************************
+Running maskoceans.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running show_colormaps.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running hurrtracks.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+(37706, 3, [-109.30000305175781, 7.199999809265137, 0.0, 0.0], [13.500100135803223, 70.70001983642578, 0.0, 0.0])
+['ABLE', 'DOG', 'FOX', 'CHARLIE', 'EASY', 'CAROL', 'HAZEL', 'CONNIE', 'JANET', 'GRETA', 'AUDREY', 'CARRIE', 'CLEO', 'HELENE', 'ILSA', 'GRACIE', 'DONNA', 'ETHEL', 'BETSY', 'CARLA', 'ESTHER', 'HATTIE', 'FLORA', 'DORA', 'GLADYS', 'HILDA', 'INEZ', 'BEULAH', 'CAMILLE', 'EDITH', 'CARMEN', 'ANITA', 'ELLA', 'DAVID', 'FREDERIC', 'ALLEN', 'HARVEY', 'DEBBY', 'DIANA', 'GLORIA', 'GILBERT', 'JOAN', 'GABRIELLE', 'HUGO', 'CLAUDETTE', 'ANDREW', 'FELIX', 'LUIS', 'OPAL', 'EDOUARD', 'HORTENSE', 'GEORGES', 'MITCH', 'BRET', 'CINDY', 'FLOYD', 'GERT', 'LENNY', 'ISAAC', 'KEITH', 'IRIS', 'MICHELLE', 'LILI', 'FABIAN', 'ISABEL', 'CHARLEY', 'FRANCES', 'IVAN', 'KARL']
+69
+**********************************************
+Running ortho_demo.py
+enter reference longitude (lon_0):75.68
+enter reference latitude (lat_0):22.72
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running garp.py
+input reference lon (degrees):75.68
+input reference lat (degrees):22.72
+name of location:Indore
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running make_inset.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running ccsm_popgrid.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+/home/ubuntu/basemap-1.3.6/examples/ccsm_popgrid.py:61: UserWarning: shading value 'faceted' not in list of valid values ['gouraud', 'nearest', 'flat', 'auto']. Setting shading='auto'.
+  im = m.pcolormesh(x,y,ma.masked_array(np.zeros(temp.shape,'f'), temp.mask),
+/home/ubuntu/basemap-1.3.6/examples/ccsm_popgrid.py:61: UserWarning: The input coordinates to pcolormesh are interpreted as cell centers, but are not monotonically increasing or decreasing. This may lead to incorrectly calculated cell edges, in which case, please supply explicit cell edges to pcolormesh.
+  im = m.pcolormesh(x,y,ma.masked_array(np.zeros(temp.shape,'f'), temp.mask),
+**********************************************
+Running test_rotpole.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+<class 'netCDF4._netCDF4.Variable'>
+|S1 rotated_pole()
+    grid_mapping_name: rotated_latitude_longitude
+    grid_north_pole_latitude: 0.0
+    grid_north_pole_longitude: 60.0
+    north_pole_grid_longitude: 180.0
+unlimited dimensions: 
+current shape = ()
+filling on, default _FillValue of  used
+lon_0,o_lon_p,o_lat_p= -120.0 180.0 0.0
+**********************************************
+Running plotmap_masked.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+**********************************************
+Running streamplot_demo.py
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+(gbm) ubuntu@ubuntu-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/basemap-1.3.6/examples$ 
+
+
