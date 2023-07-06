@@ -1,0 +1,99 @@
+These are the links to download and install the basic softwares:
+
+1. Install Anaconda ---> https://docs.anaconda.com/free/anaconda/install/linux/
+2. Install Fermi-Conda ---> https://github.com/fermi-lat/Fermitools-conda/wiki/Installation-Instructions
+3. SciServer HEASARC User Guide ---> https://heasarc.gsfc.nasa.gov/docs/sciserver/
+4. Install CFITSIO ---> https://www.gnu.org/software/gnuastro/manual/html_node/CFITSIO.html
+5. Install Jupyter Notebook & Lab ---> https://jupyter.org/install
+OR
+https://towardsdatascience.com/how-to-set-up-anaconda-and-jupyter-notebook-the-right-way-de3b7623ea4a
+6. HEASOFT Tools page ---> https://heasarc.gsfc.nasa.gov/lheasoft/
+7. Download HEASOFT software ---> https://heasarc.gsfc.nasa.gov/lheasoft/download.html
+8. Install Heasoft ---> https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html
+OR
+https://heasarc.gsfc.nasa.gov/lheasoft/install.html
+9. FermiPY Installation ---> https://fermipy.readthedocs.io/en/latest/install.html
+10. Install Geos ---> https://libgeos.org/usage/download/
+11. Install geos with basemap ---> https://matplotlib.org/basemap/users/installing.html#installation
+or
+https://github.com/matplotlib/basemap/releases/
+12. GBM Software Tools ---> https://fermi.gsfc.nasa.gov/ssc/data/analysis/gbm/
+13. Install gspec ---> https://indico.cern.ch/event/783425/contributions/3361524/attachments/1814497/2965032/GSPEC.pdf
+14. Install GBM ---> https://fermi.gsfc.nasa.gov/ssc/data/analysis/gbm/gbm_data_tools/gdt-docs/install.html
+15. Install Enrico ---> https://enrico.readthedocs.io/en/latest/setup.html
+
+
+These are the links to download the data for the Fermi Telescope data analysis:
+
+1. Fermi Data Access ---> https://fermi.gsfc.nasa.gov/ssc/data/access/
+2. Source Search Simbad ---> http://simbad.cds.unistra.fr/simbad/sim-fbasic
+3. HEASARC Source to Download LAT/GBM files ---> https://heasarc.gsfc.nasa.gov/FTP/fermi/data/
+4. GBM FILES ARCHIVE ---> https://heasarc.gsfc.nasa.gov/FTP/fermi/data/gbm/triggers/
+5. Fermi Catalog Source to Download tar files of GBM ---> https://heasarc.gsfc.nasa.gov/db-perl/W3Browse/w3table.pl?tablehead=name%3Dfermigbrst&Action=More+Options
+or
+https://heasarc.gsfc.nasa.gov/db-perl/W3Browse/w3table.pl?tablehead=name%3Dfermigbrst&Action=More+Options
+or
+https://heasarc.gsfc.nasa.gov/W3Browse/fermi/fermigbrst.html
+
+
+Additional Information
+1. All about GBM Satellite ---> https://gammaray.nsstc.nasa.gov/gbm/publications/
+2. Formula for models ---> https://fermi.gsfc.nasa.gov/ssc/data/analysis/scitools/source_models.html#Gaussian
+3. Formula for GBM models ---> https://fermi.gsfc.nasa.gov/ssc/data/analysis/gbm/gbm_data_tools/gdt-docs/api/api-spectra.html
+4. GBM Documentation ---> https://gammaray.nsstc.nasa.gov/gbm/publications/proposal/GBM-proposal.pdf
+5. BAT ---> https://swift.gsfc.nasa.gov/analysis/bat_swguide_v6_3.pdf
+
+
+Following are the tutorials used for the thorough understanding of data analysis for the Fermi LAT and GBM.
+
+1. Time Converter from MET to MJD ---> https://heasarc.gsfc.nasa.gov/cgi-bin/Tools/xTime/xTime.pl
+
+Fermi LAT Analysis for GRBs ===>
+1. https://fermi.gsfc.nasa.gov/ssc/data/analysis/scitools/extract_latdata.html
+2. https://fermi.gsfc.nasa.gov/cgi-bin/ssc/LAT/LATDataQuery.cgi
+3. https://fermi.gsfc.nasa.gov/ssc/data/analysis/scitools/explore_latdata_burst.html
+4. https://fermi.gsfc.nasa.gov/ssc/data/analysis/scitools/lat_grb_analysis.html
+5. Fermi LAT Gamma-Ray Burst Analysis ---> https://fermi.gsfc.nasa.gov/ssc/data/analysis/scitools/lat_grb_analysis.html
+6. Fermi GTBurst ---> https://fermi.gsfc.nasa.gov/ssc/data/analysis/scitools/gtburst.html
+
+Fermi LAT Analysis for AGNs ===>
+1. Fermi Unbinned Likelihood Tutorial ---> https://fermi.gsfc.nasa.gov/ssc/data/analysis/scitools/likelihood_tutorial.html
+2. Fermi Binned Likelihood Tutorial ---> https://fermi.gsfc.nasa.gov/ssc/data/analysis/scitools/binned_likelihood_tutorial.html
+3. Fermi User Contributed Models ---> https://fermi.gsfc.nasa.gov/ssc/data/analysis/user/
+4. Fermi LAT Background Models ---> https://fermi.gsfc.nasa.gov/ssc/data/access/lat/BackgroundModels.html
+5. Fermi Likelihood Analysis with Python ---> https://fermi.gsfc.nasa.gov/ssc/data/analysis/scitools/python_tutorial.html
+or 
+(Complete) https://fermi.gsfc.nasa.gov/ssc/data/p7rep/analysis/scitools/python_tutorial.html
+or
+https://notebooks.githubusercontent.com/view/ipynb?azure_maps_enabled=true&browser=chrome&color_mode=auto&commit=e502da5e45480b3538bb3a1ebcd29bd75d6e3ff1&device=unknown&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6665726d692d6c61742f416e616c79736973546872656164732f653530326461356534353438306233353338626233613165626364323962643735643665336666312f536f75726365416e616c797369732f332e507974686f6e4c696b656c69686f6f642f707974686f6e5f7475746f7269616c2e6970796e62&logged_in=false&nwo=fermi-lat%2FAnalysisThreads&path=SourceAnalysis%2F3.PythonLikelihood%2Fpython_tutorial.ipynb&platform=android&repository_id=191190607&repository_type=Repository&version=103
+6. Mistakes in Likelihood Analysis ---> https://github.com/fermi-lat/Likelihood/issues/110
+or
+https://github.com/fermi-lat/Likelihood/issues/107
+7. Fermi LAT GRBs ---> https://fermi.gsfc.nasa.gov/ssc/observations/types/grbs/lat_grbs/
+
+LAT in SAA ===> 
+1. https://fermi.gsfc.nasa.gov/ssc/data/analysis/documentation/Cicerone/Cicerone_Data/LAT_Data_Columns.html
+2. https://raw.githubusercontent.com/fermi-lat/fermitools-fhelp/master/fhelp_files/gtorbsim.txt
+3. https://fermi.gsfc.nasa.gov/ssc/data/analysis/scitools/orbsim_tutorial.html#Ephemeris
+
+FermiPy Analysis ===>
+1. Fermipy ---> https://arxiv.org/pdf/1707.09551.pdf
+2. Fermipy Documentation ---> https://fermipy.readthedocs.io/en/latest/
+
+Fermi GBM Analysis ===>
+1. GBM analysis using xspec ---> https://fermi.gsfc.nasa.gov/ssc/data/p6v11/analysis/scitools/gbm_grb_analysis.html
+or
+https://fermi.gsfc.nasa.gov/ssc/data/p7rep/analysis/scitools/gbm_grb_analysis.html
+or
+https://www.slac.stanford.edu/exp/glast/wb/prod/pages/sciTools_gbmGrbAnalysis/sciTools_gbmGrbAnalysis.htm
+2. GBM Analysis using RMFIT Tool ---> https://fermi.gsfc.nasa.gov/ssc/data/analysis/scitools/rmfit_tutorial.html
+3. GBM Analysis Notebooks ---> https://fermi.gsfc.nasa.gov/ssc/data/analysis/gbm/gbm_data_tools/gdt-docs/notebooks/index.html
+4. 3ML Technique ---> https://threeml.readthedocs.io/en/stable/notebooks/grb080916C.html
+
+
+Swift ===>
+1. SWIFT Data Analysis ---> https://swift.gsfc.nasa.gov/analysis/
+2. BAT Software Setup ---> https://www.swift.ac.uk/analysis/bat/setup.php
+3. BAT Data Analysis ---> https://www.swift.ac.uk/analysis/bat/
+
+
